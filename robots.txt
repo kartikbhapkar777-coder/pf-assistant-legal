@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kartikbhapkar777-coder.github.io/pf-assistant-legal/sitemap.xml
