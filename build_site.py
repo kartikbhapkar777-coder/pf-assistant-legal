@@ -8,7 +8,7 @@ home_body = """
     <div class="container">
       <section class="page-header" style="text-align: center; border-bottom: none; padding-top: 3rem; padding-bottom: 2rem;">
         <div style="margin-bottom: 1.25rem;">
-          <img src="./images/app-logo.png" alt="PF Pension Assistant Logo" style="width: 110px; height: 110px; object-fit: contain; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+          <img src="./images/app-logo.png?v=1792519988" alt="PF Pension Assistant Logo" style="width: 110px; height: 110px; object-fit: contain; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
         </div>
         <div class="badge badge-primary" style="margin-bottom: 1rem;">AlgoAuraX Legal & Support Portal</div>
         <h1 style="font-size: 2.5rem; max-width: 800px; margin-left: auto; margin-right: auto;">

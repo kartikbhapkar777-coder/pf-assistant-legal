@@ -106,14 +106,14 @@ def render_html_page(page_meta, body_content):
   <meta name="description" content="{page_meta["description"]}">
   <meta name="theme-color" content="#176B87">
   <link rel="stylesheet" href="{rel}css/style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="{rel}images/favicon-32x32.png">
-  <link rel="apple-touch-icon" sizes="192x192" href="{rel}images/icon-192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{rel}images/favicon-32x32.png?v=1792519978">
+  <link rel="apple-touch-icon" sizes="192x192" href="{rel}images/icon-192.png?v=1792519978">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a href="{rel}" class="brand-link" aria-label="PF Pension Assistant Home">
-        <img src="{rel}images/app-logo.png" alt="PF Pension Assistant Logo" class="brand-logo-img">
+        <img src="{rel}images/app-logo.png?v=1792519978" alt="PF Pension Assistant Logo" class="brand-logo-img">
         <div>
           <span>PF Pension Assistant</span>
           <span class="brand-sub">by AlgoAuraX</span>
