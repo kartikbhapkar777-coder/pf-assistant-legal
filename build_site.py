@@ -19,9 +19,17 @@ home_body = """
         </p>
 
         <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.75rem;">
-          <a href="https://play.google.com/store/apps/details?id=com.algoaurax.pfpensionassistant" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a1.996 1.996 0 0 1-1.61-.418c-.463-.387-.732-.977-.732-1.621V3.853c0-.644.269-1.234.732-1.621.464-.388 1.056-.533 1.609-.418zm11.597 11.599L6.96 21.659l9.317-5.38a1.696 1.696 0 0 0 0-2.866l-1.071-.62zm0-2.826l1.071-.62a1.696 1.696 0 0 0 0-2.866l-9.317-5.38 8.246 8.866zm1.414 1.413l3.197-1.846a1.706 1.706 0 0 0 0-2.866L16.62 7.288l-1.414 1.414 1.414 1.414z"/></svg>
-            Download on Google Play
+          <a href="https://play.google.com/store/apps/details?id=com.algoaurax.pfpensionassistant" target="_blank" rel="noopener noreferrer" class="btn" style="background: #000000; color: #FFFFFF !important; padding: 0.65rem 1.45rem; display: inline-flex; align-items: center; gap: 0.75rem; box-shadow: 0 4px 14px rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.15);">
+            <svg width="24" height="24" viewBox="0 0 512 512" style="flex-shrink: 0;">
+  <path fill="#4285F4" d="M47.1 23.3c-4.4 5.3-7.1 13.5-7.1 24.3v416.8c0 10.8 2.7 19 7.1 24.3l3.6 3.6 233.5-233.5v-5.6L50.7 19.7l-3.6 3.6z"/>
+  <path fill="#FBBC04" d="M361.3 335.7l-77.1-77.1v-5.6l77.1-77.1 1.7 1 91.5 52c26.1 14.8 26.1 39.1 0 54l-91.5 52-1.7.8z"/>
+  <path fill="#EA4335" d="M284.2 253L50.7 486.5c8.6 9.1 22.8 10.3 39 1.1l271.6-154.4-77.1-77.2z"/>
+  <path fill="#34A853" d="M284.2 258.6l77.1-77.1L89.7 27.1C73.5 17.9 59.3 19.1 50.7 28.2L284.2 258.6z"/>
+</svg>
+            <div style="text-align: left; line-height: 1.15;">
+              <span style="display: block; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em; opacity: 0.85; font-weight: 500;">GET IT ON</span>
+              <span style="display: block; font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em;">Google Play</span>
+            </div>
           </a>
           <a href="./contact/" class="btn btn-secondary">Contact Support</a>
           <a href="./privacy-policy/" class="btn btn-secondary">Privacy Policy</a>
@@ -96,9 +104,17 @@ home_body = """
           Currently live in Closed Testing track. Eligible testers can install directly on their Android device to access procedural PF & pension assistance.
         </p>
         <div style="display: inline-flex; flex-direction: column; align-items: center; gap: 0.75rem;">
-          <a href="https://play.google.com/store/apps/details?id=com.algoaurax.pfpensionassistant" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1.05rem; padding: 0.85rem 2rem; display: inline-flex; align-items: center; gap: 0.65rem;">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a1.996 1.996 0 0 1-1.61-.418c-.463-.387-.732-.977-.732-1.621V3.853c0-.644.269-1.234.732-1.621.464-.388 1.056-.533 1.609-.418zm11.597 11.599L6.96 21.659l9.317-5.38a1.696 1.696 0 0 0 0-2.866l-1.071-.62zm0-2.826l1.071-.62a1.696 1.696 0 0 0 0-2.866l-9.317-5.38 8.246 8.866zm1.414 1.413l3.197-1.846a1.706 1.706 0 0 0 0-2.866L16.62 7.288l-1.414 1.414 1.414 1.414z"/></svg>
-            Install via Google Play
+          <a href="https://play.google.com/store/apps/details?id=com.algoaurax.pfpensionassistant" target="_blank" rel="noopener noreferrer" class="btn" style="background: #000000; color: #FFFFFF !important; padding: 0.8rem 2.2rem; display: inline-flex; align-items: center; gap: 0.9rem; box-shadow: 0 6px 20px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius-lg);">
+            <svg width="24" height="24" viewBox="0 0 512 512" style="flex-shrink: 0;">
+  <path fill="#4285F4" d="M47.1 23.3c-4.4 5.3-7.1 13.5-7.1 24.3v416.8c0 10.8 2.7 19 7.1 24.3l3.6 3.6 233.5-233.5v-5.6L50.7 19.7l-3.6 3.6z"/>
+  <path fill="#FBBC04" d="M361.3 335.7l-77.1-77.1v-5.6l77.1-77.1 1.7 1 91.5 52c26.1 14.8 26.1 39.1 0 54l-91.5 52-1.7.8z"/>
+  <path fill="#EA4335" d="M284.2 253L50.7 486.5c8.6 9.1 22.8 10.3 39 1.1l271.6-154.4-77.1-77.2z"/>
+  <path fill="#34A853" d="M284.2 258.6l77.1-77.1L89.7 27.1C73.5 17.9 59.3 19.1 50.7 28.2L284.2 258.6z"/>
+</svg>
+            <div style="text-align: left; line-height: 1.15;">
+              <span style="display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.85; font-weight: 500;">GET IT ON</span>
+              <span style="display: block; font-size: 1.25rem; font-weight: 700; letter-spacing: -0.01em;">Google Play</span>
+            </div>
           </a>
           <span style="font-size: 0.82rem; color: var(--color-text-muted); font-family: var(--font-mono);">Package: com.algoaurax.pfpensionassistant</span>
         </div>
