@@ -64,7 +64,7 @@ PAGES = [
     {
         "id": "contact",
         "title": "Contact Us & Support — PF Pension Assistant",
-        "description": "Official support desk for PF Pension Assistant. Email: BhimaBhapkar777@gmail.com, WhatsApp: +91 9921200935 (9 AM - 7 PM IST, Mon-Sat).",
+        "description": "Official support desk for PF Pension Assistant. Email: sachinvr141@gmail.com, WhatsApp: +91 9921200935 (9 AM - 7 PM IST, Mon-Sat).",
         "rel_base": "../",
         "out_file": "contact/index.html",
         "header_title": "Contact Us",
@@ -191,7 +191,7 @@ def render_html_page(page_meta, body_content):
         <div class="footer-col">
           <h4>Customer Care & Desk</h4>
           <ul class="footer-links">
-            <li><strong>Email:</strong> <a href="mailto:BhimaBhapkar777@gmail.com">BhimaBhapkar777@gmail.com</a></li>
+            <li><strong>Email:</strong> <a href="mailto:sachinvr141@gmail.com">sachinvr141@gmail.com</a></li>
             <li><strong>WhatsApp / Phone:</strong> <a href="https://wa.me/919921200935" target="_blank" rel="noopener noreferrer">+91 9921200935</a></li>
             <li><strong>Support Hours:</strong> 9:00 AM – 7:00 PM IST (Mon–Sat)</li>
             <li><strong>Operating Region:</strong> India</li>

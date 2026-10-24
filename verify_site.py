@@ -26,7 +26,7 @@ def test_site():
     print(" [PASS] Static assets (CSS/JS) present.")
 
     # 3. Inspect page contents for verified details and absence of forbidden content
-    verified_email = "BhimaBhapkar777@gmail.com"
+    verified_email = "sachinvr141@gmail.com"
     verified_whatsapp = "919921200935"
 
     for p in pages:
