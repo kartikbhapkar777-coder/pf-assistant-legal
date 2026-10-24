@@ -1,57 +1,57 @@
 /* ==========================================================================
    PF Pension Assistant (AlgoAuraX) — Premium Modern FinTech Stylesheet
-   Designed with iOS 18 / Apple FinTech aesthetics, Bento Grid,
-   Glassmorphism, subtle micro-interactions & restrained Teal/Navy palette.
+   Color Palette: Deep Executive Navy (#0B1926, #132032) & Vibrant Teal (#0F766E, #0D9488, #14B8A6)
+   Matches Google Play Developer Policy and Razorpay Merchant KYC requirements.
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap');
 
 :root {
-  /* Brand Palette (Android App Exact Teal) */
-  --color-primary: #176B87;
-  --color-primary-rgb: 23, 107, 135;
-  --color-accent: #087E8B;
-  --color-accent-rgb: 8, 126, 139;
-  --color-primary-dark: #00526A;
-  --color-primary-light: #B6E7FF;
-  --color-primary-container: #E1F0FF;
+  /* Brand Palette (Executive Navy & Vibrant Teal) */
+  --color-primary: #0F766E;
+  --color-primary-rgb: 15, 118, 110;
+  --color-accent: #0D9488;
+  --color-accent-teal: #14B8A6;
+  --color-navy: #0B1926;
+  --color-navy-card: #132032;
+  --color-primary-dark: #115E59;
+  --color-primary-light: #CCFBF1;
+  --color-primary-container: #F0FDFA;
 
-  /* Surfaces & Backgrounds (Light - Apple Soft Slate) */
-  --color-bg: #F4F7F9;
+  /* Surfaces & Backgrounds (Light) */
+  --color-bg: #F8FAFC;
   --color-surface: #FFFFFF;
-  --color-surface-translucent: rgba(255, 255, 255, 0.82);
-  --color-surface-subtle: #F8FAFC;
-  --color-surface-hover: #EEF4F7;
+  --color-surface-translucent: rgba(255, 255, 255, 0.85);
+  --color-surface-subtle: #F1F5F9;
+  --color-surface-hover: #E2E8F0;
 
   /* Typography */
-  --color-text-main: #0F1D27;
-  --color-text-secondary: #566978;
-  --color-text-muted: #8899A6;
+  --color-text-main: #0B1926;
+  --color-text-secondary: #475569;
+  --color-text-muted: #64748B;
 
   /* Borders & Dividers */
   --color-border: #E2E8F0;
-  --color-border-subtle: rgba(15, 29, 39, 0.06);
+  --color-border-subtle: rgba(11, 25, 38, 0.08);
 
   /* Semantic */
-  --color-success: #10B981;
+  --color-success: #059669;
   --color-success-bg: #ECFDF5;
-  --color-warning: #F59E0B;
+  --color-warning: #D97706;
   --color-warning-bg: #FFFBEB;
-  --color-error: #EF4444;
+  --color-error: #DC2626;
   --color-error-bg: #FEF2F2;
 
-  /* Premium Apple Elevations */
-  --shadow-xs: 0 1px 2px rgba(15, 29, 39, 0.04);
-  --shadow-sm: 0 2px 8px rgba(15, 29, 39, 0.04), 0 1px 2px rgba(15, 29, 39, 0.02);
-  --shadow-md: 0 8px 24px -4px rgba(15, 29, 39, 0.07), 0 2px 6px -1px rgba(15, 29, 39, 0.04);
-  --shadow-lg: 0 20px 32px -8px rgba(15, 29, 39, 0.09), 0 4px 12px -2px rgba(15, 29, 39, 0.04);
-  --shadow-glow: 0 0 40px -10px rgba(23, 107, 135, 0.25);
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(11, 25, 38, 0.04);
+  --shadow-sm: 0 2px 8px rgba(11, 25, 38, 0.05), 0 1px 2px rgba(11, 25, 38, 0.03);
+  --shadow-md: 0 10px 25px -4px rgba(11, 25, 38, 0.08), 0 4px 10px -2px rgba(11, 25, 38, 0.04);
+  --shadow-lg: 0 20px 36px -8px rgba(11, 25, 38, 0.12), 0 6px 14px -3px rgba(11, 25, 38, 0.06);
 
-  /* Typography */
+  /* Typography & Radius */
   --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
 
-  /* Radius */
   --radius-xs: 6px;
   --radius-sm: 10px;
   --radius-md: 14px;
@@ -59,35 +59,37 @@
   --radius-xl: 26px;
   --radius-full: 9999px;
 
-  /* Max widths */
-  --container-max: 1080px;
-  --content-max: 820px;
+  --container-max: 1100px;
+  --content-max: 860px;
 }
 
 [data-theme="dark"] {
   /* Brand & Accents (Dark Mode) */
-  --color-primary: #58B7C5;
-  --color-primary-rgb: 88, 183, 197;
-  --color-accent: #58B7C5;
-  --color-primary-dark: #3BA0B0;
-  --color-primary-light: #004D64;
-  --color-primary-container: #15323D;
+  --color-primary: #14B8A6;
+  --color-primary-rgb: 20, 184, 166;
+  --color-accent: #2DD4BF;
+  --color-accent-teal: #5EEAD4;
+  --color-navy: #050B11;
+  --color-navy-card: #0E1722;
+  --color-primary-dark: #0D9488;
+  --color-primary-light: #134E4A;
+  --color-primary-container: #042F2E;
 
-  /* Surfaces & Backgrounds (Dark - Deep FinTech OLED Charcoal) */
-  --color-bg: #0C1217;
-  --color-surface: #141C23;
-  --color-surface-translucent: rgba(20, 28, 35, 0.85);
-  --color-surface-subtle: #10171D;
-  --color-surface-hover: #1A2631;
+  /* Surfaces & Backgrounds (Dark - Deep Executive Navy) */
+  --color-bg: #0B1219;
+  --color-surface: #121B24;
+  --color-surface-translucent: rgba(18, 27, 36, 0.88);
+  --color-surface-subtle: #0E161F;
+  --color-surface-hover: #1A2633;
 
   /* Typography (Dark) */
-  --color-text-main: #F4F7FA;
-  --color-text-secondary: #A0B1C0;
-  --color-text-muted: #6B7C8C;
+  --color-text-main: #F8FAFC;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted: #64748B;
 
   /* Borders & Dividers (Dark) */
-  --color-border: #23313E;
-  --color-border-subtle: rgba(255, 255, 255, 0.06);
+  --color-border: #1E293B;
+  --color-border-subtle: rgba(255, 255, 255, 0.07);
 
   /* Semantic (Dark) */
   --color-success: #34D399;
@@ -100,9 +102,8 @@
   /* Shadows (Dark) */
   --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
-  --shadow-md: 0 8px 24px -4px rgba(0, 0, 0, 0.45);
-  --shadow-lg: 0 20px 36px -8px rgba(0, 0, 0, 0.6);
-  --shadow-glow: 0 0 40px -10px rgba(88, 183, 197, 0.2);
+  --shadow-md: 0 10px 25px -4px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 20px 36px -8px rgba(0, 0, 0, 0.65);
 }
 
 /* Base reset */
@@ -134,7 +135,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -147,12 +147,11 @@ body {
 a {
   color: var(--color-primary);
   text-decoration: none;
-  transition: color 0.2s ease, opacity 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 a:hover {
-  text-decoration: none;
-  color: var(--color-primary-dark);
+  text-decoration: underline;
 }
 
 a:focus-visible, button:focus-visible, summary:focus-visible {
@@ -177,8 +176,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.75rem;
 }
 
-h1 { font-size: 2.35rem; font-weight: 800; letter-spacing: -0.03em; }
-h2 { font-size: 1.6rem; margin-top: 2rem; margin-bottom: 0.85rem; font-weight: 700; }
+h1 { font-size: 2.45rem; font-weight: 800; letter-spacing: -0.03em; }
+h2 { font-size: 1.65rem; margin-top: 2rem; margin-bottom: 0.85rem; font-weight: 700; }
 h3 { font-size: 1.25rem; margin-top: 1.5rem; margin-bottom: 0.65rem; }
 
 ul, ol {
@@ -195,13 +194,13 @@ code, kbd {
   font-family: var(--font-mono);
   font-size: 0.88em;
   background: var(--color-surface-hover);
-  padding: 0.15em 0.4em;
+  padding: 0.15em 0.45em;
   border-radius: var(--radius-xs);
   border: 1px solid var(--color-border);
   color: var(--color-primary);
 }
 
-/* Layout Container */
+/* Layout */
 .container {
   width: 100%;
   max-width: var(--container-max);
@@ -217,15 +216,15 @@ code, kbd {
   margin-right: auto;
 }
 
-/* Header & Shared Glassmorphic Navigation */
+/* Header */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 100;
   background-color: var(--color-surface-translucent);
   border-bottom: 1px solid var(--color-border);
-  backdrop-filter: blur(18px) saturate(180%);
-  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -233,22 +232,22 @@ code, kbd {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 68px;
+  height: 70px;
 }
 
 .brand-link {
   display: flex;
   align-items: center;
   gap: 0.85rem;
-  text-decoration: none;
+  text-decoration: none !important;
   color: var(--color-text-main);
   font-weight: 700;
   font-size: 1.05rem;
 }
 
 .brand-logo-img {
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   object-fit: cover;
   border-radius: var(--radius-sm);
   flex-shrink: 0;
@@ -269,7 +268,7 @@ code, kbd {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.35rem;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -287,6 +286,7 @@ code, kbd {
   border-radius: var(--radius-full);
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   display: inline-block;
+  text-decoration: none !important;
 }
 
 .nav-links a:hover {
@@ -297,7 +297,7 @@ code, kbd {
 .nav-links a.active {
   color: #FFFFFF !important;
   background: var(--color-primary);
-  box-shadow: 0 2px 8px rgba(var(--color-primary-rgb), 0.3);
+  box-shadow: 0 2px 8px rgba(var(--color-primary-rgb), 0.35);
 }
 
 .header-actions {
@@ -306,7 +306,6 @@ code, kbd {
   gap: 0.75rem;
 }
 
-/* Theme Toggle Button */
 .theme-toggle {
   background: var(--color-surface-subtle);
   border: 1px solid var(--color-border);
@@ -337,7 +336,6 @@ code, kbd {
   cursor: pointer;
 }
 
-/* Mobile Nav Drawer */
 .mobile-nav-menu {
   display: none;
   background-color: var(--color-surface);
@@ -371,6 +369,7 @@ code, kbd {
   font-weight: 600;
   color: var(--color-text-main);
   border-radius: var(--radius-sm);
+  text-decoration: none;
 }
 
 .mobile-nav-menu a.active {
@@ -378,7 +377,7 @@ code, kbd {
   background: var(--color-primary);
 }
 
-/* Disclaimer Banner Component */
+/* Disclaimer Banner */
 .disclaimer-banner {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -407,7 +406,7 @@ code, kbd {
   color: var(--color-text-main);
 }
 
-/* Modern Bento Grid Cards */
+/* Bento Grid Cards */
 .card {
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -426,7 +425,7 @@ code, kbd {
 }
 
 .card-title {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 0.6rem;
   color: var(--color-text-main);
@@ -435,10 +434,10 @@ code, kbd {
 .card-subtitle {
   font-size: 0.95rem;
   color: var(--color-text-secondary);
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
-/* Apple Buttons */
+/* Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -644,10 +643,13 @@ code, kbd {
   color: var(--color-text-muted);
 }
 
-/* Responsive Breakpoints */
+/* Responsive */
 @media (max-width: 860px) {
   .nav-links {
     display: none;
+  }
+  .nav-play-btn {
+    display: none !important;
   }
   .mobile-menu-btn {
     display: inline-flex;
