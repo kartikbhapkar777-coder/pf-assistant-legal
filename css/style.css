@@ -21,7 +21,7 @@
   /* Surfaces & Backgrounds (Light) */
   --color-bg: #F8FAFC;
   --color-surface: #FFFFFF;
-  --color-surface-translucent: rgba(255, 255, 255, 0.85);
+  --color-surface-translucent: rgba(255, 255, 255, 0.88);
   --color-surface-subtle: #F1F5F9;
   --color-surface-hover: #E2E8F0;
 
@@ -78,7 +78,7 @@
   /* Surfaces & Backgrounds (Dark - Deep Executive Navy) */
   --color-bg: #0B1219;
   --color-surface: #121B24;
-  --color-surface-translucent: rgba(18, 27, 36, 0.88);
+  --color-surface-translucent: rgba(18, 27, 36, 0.9);
   --color-surface-subtle: #0E161F;
   --color-surface-hover: #1A2633;
 
@@ -198,6 +198,42 @@ code, kbd {
   border-radius: var(--radius-xs);
   border: 1px solid var(--color-border);
   color: var(--color-primary);
+}
+
+/* MANDATORY GLOBAL NON-GOVERNMENT DISCLAIMER BANNER */
+.global-gov-disclaimer-banner {
+  background: #0B1926;
+  color: #F8FAFC;
+  border-bottom: 2px solid #D97706;
+  padding: 0.75rem 0;
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+[data-theme="dark"] .global-gov-disclaimer-banner {
+  background: #050B11;
+  border-bottom-color: #F59E0B;
+}
+
+.global-gov-disclaimer-inner {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.disclaimer-alert-icon {
+  width: 20px;
+  height: 20px;
+  color: #F59E0B;
+  flex-shrink: 0;
+}
+
+.global-gov-disclaimer-inner p {
+  margin: 0;
+}
+
+.global-gov-disclaimer-inner strong {
+  color: #FBBF24;
 }
 
 /* Layout */
@@ -404,6 +440,56 @@ code, kbd {
 
 .disclaimer-banner strong {
   color: var(--color-text-main);
+}
+
+/* Official Government Sources Grid */
+.gov-sources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.gov-source-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-xs);
+  transition: all 0.2s ease;
+  text-decoration: none !important;
+}
+
+.gov-source-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary);
+}
+
+.gov-source-card h4 {
+  color: var(--color-text-main);
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gov-source-card p {
+  color: var(--color-text-secondary);
+  font-size: 0.84rem;
+  margin: 0;
+}
+
+.gov-source-url {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-primary);
+  margin-top: 0.65rem;
+  word-break: break-all;
 }
 
 /* Bento Grid Cards */

@@ -4,32 +4,32 @@ PAGES = [
     {
         "id": "home",
         "title": "PF Pension Assistant — Independent EPF & EPS-95 Guidance",
-        "description": "PF Pension Assistant by AlgoAuraX: Independent EPS-95 pension calculator, EPF interest estimator, EPFO claim forms guide, and ₹299 1-on-1 expert advisory.",
+        "description": "PF Pension Assistant: Independent educational resource for EPS-95 pension calculation, EPF interest estimation, EPFO claim guides, and assisted advisory.",
         "rel_base": "./",
         "out_file": "index.html",
         "header_title": "PF Pension Assistant",
         "header_subtitle": "Independent EPF & EPS-95 Pension Information and Procedure Guidance",
-        "last_updated": "October 2026"
+        "last_updated": "October 26, 2026"
     },
     {
         "id": "privacy-policy",
         "title": "Privacy Policy — PF Pension Assistant",
-        "description": "Privacy-first architecture: Zero-login, on-device calculations, and zero storage of sensitive EPFO credentials or personal financial data.",
+        "description": "Privacy Policy for PF Pension Assistant. Zero credential storage, Firebase authentication, Google Play Data Safety compliance, and user rights.",
         "rel_base": "../",
         "out_file": "privacy-policy/index.html",
         "header_title": "Privacy Policy",
-        "header_subtitle": "Complete transparency regarding on-device processing, zero-login design, and Google Play Data Safety compliance.",
-        "last_updated": "October 24, 2026"
+        "header_subtitle": "Complete transparency regarding on-device processing, Firebase authentication, zero credential storage, and Google Play Data Safety.",
+        "last_updated": "October 26, 2026"
     },
     {
         "id": "terms",
-        "title": "Terms and Conditions — PF Pension Assistant",
-        "description": "Terms of Service for PF Pension Assistant and ₹299 Assisted Advisory service by AlgoAuraX. Razorpay Merchant & Google Play compliant.",
+        "title": "Terms of Service — PF Pension Assistant",
+        "description": "Terms of Service for PF Pension Assistant and ₹299 Assisted Advisory service by AlgoAuraX. Strictly non-government and private educational resource.",
         "rel_base": "../",
         "out_file": "terms/index.html",
-        "header_title": "Terms and Conditions",
-        "header_subtitle": "Legal agreements, scope of ₹299 assisted advisory, non-affiliation, and user responsibilities.",
-        "last_updated": "October 24, 2026"
+        "header_title": "Terms of Service",
+        "header_subtitle": "Legal agreements, scope of ₹299 assisted advisory, non-government status, official source verification, and user responsibilities.",
+        "last_updated": "October 26, 2026"
     },
     {
         "id": "refund-policy",
@@ -39,37 +39,37 @@ PAGES = [
         "out_file": "refund-policy/index.html",
         "header_title": "Refund and Cancellation Policy",
         "header_subtitle": "Fair review terms, 100% refund guarantee, duplicate transaction resolution, and 5-7 business day settlement.",
-        "last_updated": "October 24, 2026"
+        "last_updated": "October 26, 2026"
     },
     {
         "id": "disclaimer",
-        "title": "Non-Affiliation Disclaimer — PF Pension Assistant",
-        "description": "Statutory notice of non-affiliation with EPFO, Ministry of Labour, or Government of India. Direct links to official portals.",
+        "title": "Disclaimer — PF Pension Assistant",
+        "description": "Statutory notice of non-affiliation with EPFO, Ministry of Labour, or Government of India. Direct links to official government portals.",
         "rel_base": "../",
         "out_file": "disclaimer/index.html",
-        "header_title": "Non-Affiliation Disclaimer",
-        "header_subtitle": "Official legal notice confirming independent private operation under AlgoAuraX.",
-        "last_updated": "October 24, 2026"
+        "header_title": "Disclaimer",
+        "header_subtitle": "Official legal notice confirming independent private operation and direct official government source links.",
+        "last_updated": "October 26, 2026"
     },
     {
         "id": "data-deletion",
         "title": "Account & Data Deletion — PF Pension Assistant",
-        "description": "Instructions for requesting deletion of support inquiries and transaction records under AlgoAuraX.",
+        "description": "Instructions for requesting deletion of user data and support inquiries under AlgoAuraX.",
         "rel_base": "../",
         "out_file": "data-deletion/index.html",
         "header_title": "Account and Data Deletion",
         "header_subtitle": "Google Play compliant data deletion instructions and verified support procedures.",
-        "last_updated": "October 24, 2026"
+        "last_updated": "October 26, 2026"
     },
     {
         "id": "contact",
         "title": "Contact Us & Support — PF Pension Assistant",
-        "description": "Official support desk for PF Pension Assistant. Email: sachinvr141@gmail.com, WhatsApp: +91 9921200935 (9 AM - 7 PM IST, Mon-Sat).",
+        "description": "Official support desk for PF Pension Assistant. Email: BhimaBhapkar777@gmail.com, WhatsApp: +91 9921200935 (9 AM - 7 PM IST, Mon-Sat).",
         "rel_base": "../",
         "out_file": "contact/index.html",
         "header_title": "Contact Us",
         "header_subtitle": "Reach our dedicated support team via WhatsApp Business or official email desk.",
-        "last_updated": "October 24, 2026"
+        "last_updated": "October 26, 2026"
     }
 ]
 
@@ -80,7 +80,7 @@ def render_html_page(page_meta, body_content):
     nav_items = [
         {"id": "home", "href": f"{rel}", "label": "Home"},
         {"id": "privacy-policy", "href": f"{rel}privacy-policy/", "label": "Privacy Policy"},
-        {"id": "terms", "href": f"{rel}terms/", "label": "Terms & Conditions"},
+        {"id": "terms", "href": f"{rel}terms/", "label": "Terms of Service"},
         {"id": "refund-policy", "href": f"{rel}refund-policy/", "label": "Refund Policy"},
         {"id": "disclaimer", "href": f"{rel}disclaimer/", "label": "Disclaimer"},
         {"id": "contact", "href": f"{rel}contact/", "label": "Contact Us"}
@@ -103,22 +103,34 @@ def render_html_page(page_meta, body_content):
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{page_meta["title"]}</title>
   <meta name="description" content="{page_meta["description"]}">
-  <meta name="theme-color" content="#0F766E">
+  <meta name="theme-color" content="#0B1926">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{rel}css/style.css?v=6">
-  <link rel="icon" type="image/png" sizes="32x32" href="{rel}images/favicon-32x32.png?v=6">
-  <link rel="apple-touch-icon" sizes="192x192" href="{rel}images/icon-192.png?v=6">
+  <link rel="stylesheet" href="{rel}css/style.css?v=8">
+  <link rel="icon" type="image/png" sizes="32x32" href="{rel}images/favicon-32x32.png?v=8">
+  <link rel="apple-touch-icon" sizes="192x192" href="{rel}images/icon-192.png?v=8">
 </head>
 <body>
+  <!-- MANDATORY GLOBAL NON-GOVERNMENT DISCLAIMER BANNER (Header Top of EVERY Page) -->
+  <div class="global-gov-disclaimer-banner" role="alert">
+    <div class="container global-gov-disclaimer-inner">
+      <svg class="disclaimer-alert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+      </svg>
+      <p>
+        <strong>DISCLAIMER:</strong> PF Pension Assistant and this website are independent educational &amp; informational resources. This service <strong>DOES NOT represent, and is NOT affiliated with, endorsed by, or authorized by</strong> the Employees' Provident Fund Organisation (EPFO), Ministry of Labour and Employment, or the Government of India.
+      </p>
+    </div>
+  </div>
+
   <header class="site-header">
     <div class="container header-inner">
       <a href="{rel}" class="brand-link" aria-label="PF Pension Assistant Home">
-        <img src="{rel}images/app-logo.png?v=6" alt="PF Pension Assistant Logo" class="brand-logo-img">
+        <img src="{rel}images/app-logo.png?v=8" alt="PF Pension Assistant Logo" class="brand-logo-img">
         <div>
           <span>PF Pension Assistant</span>
-          <span class="brand-sub">by AlgoAuraX</span>
+          <span class="brand-sub">Independent Resource by AlgoAuraX</span>
         </div>
       </a>
 
@@ -169,33 +181,32 @@ def render_html_page(page_meta, body_content):
         <div class="footer-col">
           <h4>PF Pension Assistant</h4>
           <p style="font-size: 0.9rem; margin-bottom: 0.85rem; line-height: 1.6;">
-            A privacy-focused mobile and procedural assistance tool developed by <strong>AlgoAuraX</strong>. Built with a zero-login on-device architecture to help Indian subscribers calculate EPS-95 pension estimates, project EPF balance, and navigate complex claim procedures.
+            A privacy-focused mobile and procedural assistance tool developed by <strong>AlgoAuraX</strong>. Built with a zero-credential-storage, on-device architecture to help Indian subscribers calculate EPS-95 pension estimates, project EPF balance, and navigate complex claim procedures.
           </p>
           <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
             <span class="badge badge-primary">Private Entity</span>
-            <span class="badge badge-success">Zero-Login Architecture</span>
+            <span class="badge badge-success">Zero Credential Storage</span>
           </div>
         </div>
 
         <div class="footer-col">
-          <h4>Legal Policies & Compliance</h4>
+          <h4>Legal Policies &amp; Compliance</h4>
           <ul class="footer-links">
             <li><a href="{rel}privacy-policy/">Privacy Policy</a></li>
-            <li><a href="{rel}terms/">Terms & Conditions</a></li>
-            <li><a href="{rel}refund-policy/">Refund & Cancellation Policy</a></li>
-            <li><a href="{rel}disclaimer/">Non-Affiliation Disclaimer</a></li>
-            <li><a href="{rel}data-deletion/">Account & Data Deletion</a></li>
+            <li><a href="{rel}terms/">Terms of Service</a></li>
+            <li><a href="{rel}refund-policy/">Refund &amp; Cancellation Policy</a></li>
+            <li><a href="{rel}disclaimer/">Disclaimer</a></li>
+            <li><a href="{rel}data-deletion/">Account &amp; Data Deletion</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h4>Customer Care & Desk</h4>
+          <h4>Official Government Sources</h4>
           <ul class="footer-links">
-            <li><strong>Email:</strong> <a href="mailto:sachinvr141@gmail.com">sachinvr141@gmail.com</a></li>
-            <li><strong>WhatsApp / Phone:</strong> <a href="https://wa.me/919921200935" target="_blank" rel="noopener noreferrer">+91 9921200935</a></li>
-            <li><strong>Support Hours:</strong> 9:00 AM – 7:00 PM IST (Mon–Sat)</li>
-            <li><strong>Operating Region:</strong> India</li>
-            <li><a href="{rel}contact/" style="color: var(--color-primary); font-weight: 600;">Full Contact Information &rarr;</a></li>
+            <li><a href="https://www.epfindia.gov.in" target="_blank" rel="noopener noreferrer">Official EPFO Portal &nearr;</a></li>
+            <li><a href="https://unifiedportal-mem.epfindia.gov.in/memberinterface/" target="_blank" rel="noopener noreferrer">EPFO Member e-Sewa Portal &nearr;</a></li>
+            <li><a href="https://passbook.epfindia.gov.in" target="_blank" rel="noopener noreferrer">EPFO Member Passbook &nearr;</a></li>
+            <li><a href="https://epfigms.gov.in" target="_blank" rel="noopener noreferrer">EPFiGMS Grievance Portal &nearr;</a></li>
           </ul>
         </div>
       </div>
@@ -204,14 +215,14 @@ def render_html_page(page_meta, body_content):
         <svg class="disclaimer-banner-icon" style="color: var(--color-warning);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
         </svg>
-        <div style="font-size: 0.82rem; line-height: 1.5;">
-          <strong>Statutory Non-Affiliation Notice:</strong> PF Pension Assistant and AlgoAuraX are independent private entities and are <strong>NOT</strong> affiliated with, authorized, endorsed, or sponsored by the Employees' Provident Fund Organisation (EPFO), Ministry of Labour and Employment, or the Government of India. The ₹299 fee is strictly a private consultancy fee for informational advisory and does not guarantee government approval or claim settlement. Official portals: <a href="https://www.epfindia.gov.in" target="_blank" rel="noopener noreferrer">epfindia.gov.in</a> &bull; <a href="https://unifiedportal-mem.epfindia.gov.in" target="_blank" rel="noopener noreferrer">Unified Portal</a> &bull; <a href="https://passbook.epfindia.gov.in" target="_blank" rel="noopener noreferrer">Passbook Portal</a>.
+        <div style="font-size: 0.84rem; line-height: 1.55;">
+          <strong>Statutory Non-Government Notice:</strong> PF Pension Assistant and AlgoAuraX are independent private entities and are <strong>NOT</strong> affiliated with, endorsed by, or authorized by the Employees' Provident Fund Organisation (EPFO), Ministry of Labour and Employment, or the Government of India. The ₹299 fee is strictly a private consulting fee for 1-on-1 assistance and does NOT guarantee claim approval or pension sanction by EPFO authorities. Users must verify official records on government portals: <a href="https://www.epfindia.gov.in" target="_blank" rel="noopener noreferrer">epfindia.gov.in</a> &bull; <a href="https://unifiedportal-mem.epfindia.gov.in/memberinterface/" target="_blank" rel="noopener noreferrer">Member e-Sewa</a> &bull; <a href="https://passbook.epfindia.gov.in" target="_blank" rel="noopener noreferrer">Passbook Portal</a>.
         </div>
       </div>
 
       <div class="footer-bottom">
-        <div>&copy; 2026 AlgoAuraX &bull; PF Pension Assistant. All rights reserved.</div>
-        <div>Compliant with Google Play Developer Policies & Razorpay Merchant KYC Guidelines.</div>
+        <div>&copy; 2026 AlgoAuraX &bull; PF Pension Assistant. All rights reserved. Support: <a href="mailto:BhimaBhapkar777@gmail.com">BhimaBhapkar777@gmail.com</a> | WhatsApp: +91 9921200935</div>
+        <div>Strictly compliant with Google Play Developer Policies &amp; Razorpay Merchant KYC Guidelines.</div>
       </div>
     </div>
   </footer>

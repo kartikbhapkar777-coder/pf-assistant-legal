@@ -8,22 +8,68 @@ play_badge_svg = '''<svg width="24" height="24" viewBox="0 0 512 512" style="fle
   <path fill="#34A853" d="M284.2 258.6l77.1-77.1L89.7 27.1C73.5 17.9 59.3 19.1 50.7 28.2L284.2 258.6z"/>
 </svg>'''
 
+gov_sources_component = """
+      <!-- MANDATORY OFFICIAL GOVERNMENT SOURCE LINKS (Google Play Compliant) -->
+      <section style="margin: 3.5rem 0; padding: 2.25rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-xl); box-shadow: var(--shadow-sm);">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.75rem;">
+          <div style="display: flex; align-items: center; gap: 0.65rem;">
+            <span class="badge badge-primary">Official Portals</span>
+            <h3 style="margin: 0; font-size: 1.35rem;">Official Government Sources</h3>
+          </div>
+          <span style="font-size: 0.82rem; color: var(--color-text-muted);">Verified Government of India Links</span>
+        </div>
+        <p style="color: var(--color-text-secondary); margin-bottom: 1.25rem; font-size: 0.92rem;">
+          PF Pension Assistant is an independent informational utility. For all official submissions, live passbook downloads, claim status checks, and official grievance tracking, please access the authorized government portals directly:
+        </p>
+        <div class="gov-sources-grid">
+          <a href="https://www.epfindia.gov.in" target="_blank" rel="noopener noreferrer" class="gov-source-card">
+            <div>
+              <h4>Official EPFO Portal <span>&nearr;</span></h4>
+              <p>Main website of Employees' Provident Fund Organisation. Official circulars, notifications &amp; scheme rules.</p>
+            </div>
+            <div class="gov-source-url">https://www.epfindia.gov.in</div>
+          </a>
+          <a href="https://unifiedportal-mem.epfindia.gov.in/memberinterface/" target="_blank" rel="noopener noreferrer" class="gov-source-card">
+            <div>
+              <h4>EPFO Member e-Sewa <span>&nearr;</span></h4>
+              <p>Unified Member Portal for UAN login, online claim submission (Form 19, 10C, 31, 10D) &amp; KYC linking.</p>
+            </div>
+            <div class="gov-source-url">unifiedportal-mem.epfindia.gov.in</div>
+          </a>
+          <a href="https://passbook.epfindia.gov.in" target="_blank" rel="noopener noreferrer" class="gov-source-card">
+            <div>
+              <h4>EPFO Member Passbook <span>&nearr;</span></h4>
+              <p>Official portal to download updated EPF statement, contribution logs, and real-time claim status.</p>
+            </div>
+            <div class="gov-source-url">passbook.epfindia.gov.in</div>
+          </a>
+          <a href="https://epfigms.gov.in" target="_blank" rel="noopener noreferrer" class="gov-source-card">
+            <div>
+              <h4>EPFiGMS Grievance Portal <span>&nearr;</span></h4>
+              <p>Centralized official grievance registration and redressal system for EPF and EPS subscribers.</p>
+            </div>
+            <div class="gov-source-url">https://epfigms.gov.in</div>
+          </a>
+        </div>
+      </section>
+"""
+
 # -------------------------------------------------------------
 # 1. HOME PAGE
 # -------------------------------------------------------------
 home_body = f"""
     <div class="container">
       <!-- Hero Section -->
-      <section class="page-header" style="text-align: center; border-bottom: none; padding-top: 3rem; padding-bottom: 2rem;">
+      <section class="page-header" style="text-align: center; border-bottom: none; padding-top: 2.75rem; padding-bottom: 2rem;">
         <div style="margin-bottom: 1.25rem;">
-          <img src="./images/app-logo.png?v=6" alt="PF Pension Assistant Logo" style="width: 105px; height: 105px; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 2px solid var(--color-border);">
+          <img src="./images/app-logo.png?v=8" alt="PF Pension Assistant Logo" style="width: 105px; height: 105px; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 2px solid var(--color-border);">
         </div>
-        <div class="badge badge-primary" style="margin-bottom: 1rem;">AlgoAuraX Legal & Support Portal</div>
+        <div class="badge badge-primary" style="margin-bottom: 1rem;">AlgoAuraX Independent Legal &amp; Support Portal</div>
         <h1 style="font-size: 2.55rem; max-width: 820px; margin-left: auto; margin-right: auto;">
-          Intelligent Guidance for Your EPF Savings & EPS-95 Pension
+          Intelligent Guidance for Your EPF Savings &amp; EPS-95 Pension
         </h1>
         <p class="page-subtitle" style="margin-left: auto; margin-right: auto; font-size: 1.12rem;">
-          PF Pension Assistant is an independent Android application engineered with a privacy-first, zero-login architecture to help Indian subscribers calculate pension entitlements, estimate provident fund growth, and navigate complex claim procedures.
+          PF Pension Assistant is an independent educational Android application engineered with a privacy-first, zero-credential-storage architecture to help Indian subscribers estimate pensions, project compound interest growth, and navigate EPFO claim procedures.
         </p>
 
         <!-- Primary Call to Actions -->
@@ -43,21 +89,11 @@ home_body = f"""
         </div>
       </section>
 
-      <!-- App Disclaimer Banner -->
-      <div class="disclaimer-banner">
-        <svg class="disclaimer-banner-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>
-        </svg>
-        <div>
-          <strong>Statutory Disclaimer & Non-Affiliation Notice:</strong> PF Pension Assistant is an independent utility application developed by <strong>AlgoAuraX</strong>. It is <strong>NOT</strong> affiliated with, authorized, endorsed, or sponsored by the Employees' Provident Fund Organisation (EPFO), the Ministry of Labour and Employment, or the Government of India. Official government services must be conducted solely on official portals (<a href="https://www.epfindia.gov.in" target="_blank" rel="noopener noreferrer">epfindia.gov.in</a>).
-        </div>
-      </div>
-
       <!-- App Core Features Grid -->
       <section style="margin: 3.5rem 0;">
         <div style="text-align: center; margin-bottom: 2.25rem;">
           <span class="badge badge-primary" style="margin-bottom: 0.5rem;">Powerful Utilities</span>
-          <h2>Everything You Need for EPF & EPS Management</h2>
+          <h2>Everything You Need for EPF &amp; EPS Management</h2>
           <p style="color: var(--color-text-secondary); max-width: 620px; margin: 0 auto;">Engineered to clarify complex retirement calculations and procedural rules without compromising your privacy.</p>
         </div>
 
@@ -78,7 +114,7 @@ home_body = f"""
             <div style="display: inline-flex; width: 44px; height: 44px; border-radius: var(--radius-md); background: var(--color-primary-container); align-items: center; justify-content: center; color: var(--color-primary); margin-bottom: 1.15rem;">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
             </div>
-            <h3 class="card-title">2. EPF Balance & Interest Growth Estimator</h3>
+            <h3 class="card-title">2. EPF Balance &amp; Interest Growth Estimator</h3>
             <p class="card-subtitle">
               Projects compound provident fund savings based on your monthly basic wage, employee/employer contributions, and the official EPFO annual interest rate (8.25% p.a.). See year-by-year accumulation and forecast your lump-sum corpus at retirement.
             </p>
@@ -89,7 +125,7 @@ home_body = f"""
             <div style="display: inline-flex; width: 44px; height: 44px; border-radius: var(--radius-md); background: var(--color-primary-container); align-items: center; justify-content: center; color: var(--color-primary); margin-bottom: 1.15rem;">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
             </div>
-            <h3 class="card-title">3. EPFO Claim Forms & Procedures Guide</h3>
+            <h3 class="card-title">3. EPFO Claim Forms &amp; Procedures Guide</h3>
             <p class="card-subtitle">
               Step-by-step guidance for Form 19 (Final PF Settlement), Form 10C (EPS Withdrawal / Scheme Certificate), Form 31 (Advance for Illness, Housing, Marriage), and Form 10D (Monthly Pension Application). Clear requirements on necessary attestation and joint declarations.
             </p>
@@ -111,13 +147,15 @@ home_body = f"""
             <div style="display: inline-flex; width: 44px; height: 44px; border-radius: var(--radius-md); background: var(--color-success-bg); align-items: center; justify-content: center; color: var(--color-success); margin-bottom: 1.15rem;">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
             </div>
-            <h3 class="card-title">5. 100% Privacy & Zero-Login Architecture</h3>
+            <h3 class="card-title">5. 100% Privacy &amp; Zero Credential Storage</h3>
             <p class="card-subtitle" style="max-width: 850px;">
-              No user account or password required. Zero collection or storage of sensitive EPFO credentials, UAN passwords, OTPs, or CAPTCHAs. All financial calculations run strictly on-device without external server transmission. Zero data shared with third parties or advertisers.
+              We NEVER ask for, collect, or store your EPFO UAN password, Aadhaar OTP, or banking passwords. Basic login uses Firebase Auth (Google Sign-In) solely for authentication. All financial estimations run strictly on-device. Zero data shared with third parties or advertisers.
             </p>
           </div>
         </div>
       </section>
+
+{gov_sources_component}
 
       <!-- Transparent Pricing Card Section (Razorpay Merchant Compliant) -->
       <section style="margin: 3.5rem 0;">
@@ -125,7 +163,7 @@ home_body = f"""
           <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 2rem;">
             <div style="max-width: 620px;">
               <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
-                <span class="badge badge-primary">Transparent Pricing</span>
+                <span class="badge badge-primary">Private Consulting Fee</span>
                 <span class="badge badge-success">Razorpay Verified</span>
               </div>
               <h2>PF Expert Assistance — ₹299 per Request</h2>
@@ -139,13 +177,13 @@ home_body = f"""
                 <li>Assigned unique Request ID (e.g. <code>PF-REQ-XXXXX</code>) for end-to-end tracking</li>
                 <li><strong>100% Refund Guarantee</strong> if our specialist fails to respond within 48 business hours</li>
               </ul>
-              <div style="font-size: 0.85rem; color: var(--color-text-muted);">
-                * Note: The ₹299 fee is strictly a private consultancy and procedural advisory fee. It does not and cannot guarantee claim approval or expedite government processing times. Official claims must be submitted by the user through official EPFO portals.
+              <div style="font-size: 0.85rem; color: var(--color-text-muted); background: var(--color-surface-subtle); padding: 0.85rem 1rem; border-radius: var(--radius-sm); border-left: 3px solid var(--color-warning);">
+                <strong>Important Disclosure:</strong> This ₹299 fee is strictly an optional private consulting fee for 1-on-1 assistance, form review, and guidance. <strong>This fee is NOT an official EPFO government fee and does NOT guarantee claim approval or pension sanction by EPFO authorities.</strong> Official claims must be submitted by users directly on official portals.
               </div>
             </div>
 
             <div style="text-align: center; min-width: 260px; padding: 2rem; background: var(--color-surface-subtle); border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);">
-              <div style="font-size: 0.82rem; text-transform: uppercase; font-weight: 700; color: var(--color-text-muted); letter-spacing: 0.05em;">One-Time Advisory Fee</div>
+              <div style="font-size: 0.82rem; text-transform: uppercase; font-weight: 700; color: var(--color-text-muted); letter-spacing: 0.05em;">Private Advisory Fee</div>
               <div style="font-size: 3rem; font-weight: 800; color: var(--color-primary); margin: 0.25rem 0; line-height: 1;">₹299</div>
               <div style="font-size: 0.85rem; color: var(--color-text-secondary); margin-bottom: 1.5rem;">Per Assistance Request</div>
               
@@ -179,27 +217,27 @@ home_body = f"""
 
       <!-- Legal Links Grid -->
       <section style="margin: 4rem 0;">
-        <h2 style="margin-bottom: 1.5rem;">Legal Agreements & Policy Documentation</h2>
+        <h2 style="margin-bottom: 1.5rem;">Legal Agreements &amp; Policy Documentation</h2>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem;">
           <a href="./privacy-policy/" class="card" style="text-decoration: none; color: inherit;">
             <h4 style="margin-bottom: 0.35rem; color: var(--color-primary);">Privacy Policy &rarr;</h4>
-            <p style="font-size: 0.85rem; color: var(--color-text-secondary); margin: 0;">Zero-login architecture, on-device calculations, and zero storage of passwords or OTPs.</p>
+            <p style="font-size: 0.85rem; color: var(--color-text-secondary); margin: 0;">Zero credential storage, Firebase auth disclosures, and Google Play Data Safety compliance.</p>
           </a>
           <a href="./terms/" class="card" style="text-decoration: none; color: inherit;">
-            <h4 style="margin-bottom: 0.35rem; color: var(--color-primary);">Terms & Conditions &rarr;</h4>
-            <p style="font-size: 0.85rem; color: var(--color-text-secondary); margin: 0;">Scope of ₹299 assisted advisory, non-affiliation, and disclaimer of government outcomes.</p>
+            <h4 style="margin-bottom: 0.35rem; color: var(--color-primary);">Terms of Service &rarr;</h4>
+            <p style="font-size: 0.85rem; color: var(--color-text-secondary); margin: 0;">Non-government status, scope of ₹299 assisted advisory, and disclaimer of government outcomes.</p>
           </a>
           <a href="./refund-policy/" class="card" style="text-decoration: none; color: inherit;">
-            <h4 style="margin-bottom: 0.35rem; color: var(--color-primary);">Refund & Cancellation &rarr;</h4>
+            <h4 style="margin-bottom: 0.35rem; color: var(--color-primary);">Refund &amp; Cancellation &rarr;</h4>
             <p style="font-size: 0.85rem; color: var(--color-text-secondary); margin: 0;">100% refund guarantee within 48-hour response window, duplicate charge resolution, 5-7 days credit.</p>
           </a>
           <a href="./disclaimer/" class="card" style="text-decoration: none; color: inherit;">
-            <h4 style="margin-bottom: 0.35rem; color: var(--color-primary);">Non-Affiliation Disclaimer &rarr;</h4>
-            <p style="font-size: 0.85rem; color: var(--color-text-secondary); margin: 0;">Statutory notice of non-affiliation with EPFO or Govt of India, plus direct official links.</p>
+            <h4 style="margin-bottom: 0.35rem; color: var(--color-primary);">Disclaimer &rarr;</h4>
+            <p style="font-size: 0.85rem; color: var(--color-text-secondary); margin: 0;">Notice of non-affiliation with EPFO or Govt of India, plus direct official government links.</p>
           </a>
           <a href="./contact/" class="card" style="text-decoration: none; color: inherit;">
             <h4 style="margin-bottom: 0.35rem; color: var(--color-primary);">Contact Us &rarr;</h4>
-            <p style="font-size: 0.85rem; color: var(--color-text-secondary); margin: 0;">Email: sachinvr141@gmail.com, WhatsApp: +91 9921200935 (9 AM - 7 PM Mon-Sat).</p>
+            <p style="font-size: 0.85rem; color: var(--color-text-secondary); margin: 0;">Email: BhimaBhapkar777@gmail.com, WhatsApp: +91 9921200935 (9 AM - 7 PM Mon-Sat).</p>
           </a>
         </div>
       </section>
@@ -214,10 +252,10 @@ privacy_body = """
       <div class="page-header">
         <div class="badge badge-primary">Google Play Data Safety Compliant</div>
         <h1 class="page-title">Privacy Policy</h1>
-        <p class="page-subtitle">Effective Date: October 24, 2026 &bull; Published by AlgoAuraX for PF Pension Assistant (Android)</p>
+        <p class="page-subtitle">Effective Date: October 26, 2026 &bull; Published by AlgoAuraX for PF Pension Assistant (Android)</p>
         <div class="meta-info">
-          <span>Target Audience: 18+ (Working professionals & pensioners)</span>
-          <span>Contact Email: sachinvr141@gmail.com</span>
+          <span>Target Audience: 18+ (Working professionals &amp; pensioners)</span>
+          <span>Contact Email: BhimaBhapkar777@gmail.com</span>
         </div>
       </div>
 
@@ -226,67 +264,98 @@ privacy_body = """
           <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>
         </svg>
         <div>
-          <strong>Privacy Commitment:</strong> PF Pension Assistant is built with a zero-login, on-device architecture. We <strong>never</strong> ask for, store, transmit, or sell your UAN passwords, OTPs, Aadhaar numbers, CAPTCHAs, or bank login credentials.
+          <strong>Privacy Commitment:</strong> PF Pension Assistant is built with strict privacy-by-design standards. <strong>We NEVER ask for, collect, or store your EPFO UAN password, Aadhaar OTP, or banking passwords.</strong>
         </div>
       </div>
 
       <div class="legal-content">
         <section class="legal-section">
-          <h2>1. Introduction & Overview</h2>
+          <h2>1. Introduction &amp; Scope</h2>
           <p>
-            This Privacy Policy governs the manner in which <strong>PF Pension Assistant</strong> (the "Application"), developed and maintained under the brand <strong>AlgoAuraX</strong> ("we", "us", or "our"), handles information. We are committed to protecting the privacy of users ("User" or "you") who download our Android app or visit our legal website.
+            This Privacy Policy explains how <strong>PF Pension Assistant</strong> (the "Application"), developed and maintained under the brand <strong>AlgoAuraX</strong> ("we", "us", or "our"), handles personal information. This policy applies to the Android application (Package: <code>com.algoaurax.pfpensionassistant</code>) and this official support website.
           </p>
         </section>
 
         <section class="legal-section">
-          <h2>2. Zero-Login & On-Device Processing Architecture</h2>
-          <p>
-            The Application is engineered with a strict <strong>"No Data Collected, No Data Shared"</strong> philosophy:
-          </p>
-          <ul>
-            <li><strong>No User Account or Login Required:</strong> Users can freely use the EPS-95 pension calculator, EPF interest estimator, and procedural guides without registering an account.</li>
-            <li><strong>Strictly On-Device Execution:</strong> All numerical calculations (service years, pensionable salary, compound interest forecasts) execute strictly within your phone's memory. No inputs are transmitted to external cloud servers.</li>
-            <li><strong>Zero Storage of EPFO Credentials:</strong> The app does not request or store your Universal Account Number (UAN) password, Member Portal login, Aadhaar number, or SMS OTPs.</li>
-          </ul>
-        </section>
-
-        <section class="legal-section">
-          <h2>3. Information Collected for the ₹299 Assisted Advisory</h2>
-          <p>
-            When a user voluntarily requests the optional <strong>"PF Expert Assistance"</strong> (₹299 fee) service, the following details are submitted to initiate support:
-          </p>
-          <ul>
-            <li><strong>Name & Contact Mobile:</strong> To identify the inquiry and communicate via WhatsApp.</li>
-            <li><strong>Service Category & Problem Description:</strong> Summary of the procedural issue (e.g. claim rejection reason, joint declaration inquiry).</li>
-            <li><strong>Payment Transaction Identifier:</strong> Razorpay payment ID and generated Request ID (e.g. <code>PF-REQ-XXXXX</code>) for payment reconciliation.</li>
-          </ul>
+          <h2>2. Zero Sensitive Credential Storage</h2>
           <div class="highlight-box danger">
-            <strong>STRICT PROHIBITION:</strong><br>
-            Users are explicitly instructed <strong>NEVER</strong> to send passwords, OTPs, banking PINs, or Aadhaar numbers to our support desk. Our team will never ask for confidential authentication credentials.
+            <strong>CRITICAL PRIVACY SAFEGUARD:</strong><br>
+            <strong>We NEVER ask for, collect, or store your EPFO UAN password, Aadhaar OTP, or banking passwords.</strong>
+            <p style="margin-top: 0.5rem; margin-bottom: 0;">
+              Users are strictly instructed never to share passwords, OTPs, or financial secrets with our app, support staff, or any third party. The Application does not connect directly to EPFO servers to capture credentials.
+            </p>
           </div>
         </section>
 
         <section class="legal-section">
-          <h2>4. Third-Party Service Providers</h2>
-          <ul>
-            <li><strong>Google Play Services:</strong> Core runtime compatibility and app delivery.</li>
-            <li><strong>Razorpay Software Private Limited:</strong> When purchasing the ₹299 advisory, payments are processed by Razorpay under PCI-DSS certified security. We do not store credit/debit card numbers or net-banking passwords.</li>
-            <li><strong>WhatsApp (Meta):</strong> Optional user-initiated support communication taking place under WhatsApp's end-to-end encryption.</li>
-          </ul>
-        </section>
-
-        <section class="legal-section">
-          <h2>5. Data Retention & User Rights</h2>
+          <h2>3. Information Collected &amp; Authentication Flow</h2>
+          <p>We adhere strictly to Google Play Data Safety requirements and minimal data collection:</p>
+          
+          <h3>A. Google Sign-In via Firebase Authentication</h3>
           <p>
-            You have the right to request deletion of your support conversation and transaction reference at any time by contacting <a href="mailto:sachinvr141@gmail.com">sachinvr141@gmail.com</a>. Statutory financial records are retained only for the period mandated by applicable Indian tax regulations.
+            When a user signs in, Google Sign-In via Firebase Auth collects only basic profile information:
+          </p>
+          <ul>
+            <li><strong>Email Address:</strong> Used strictly for secure account identification.</li>
+            <li><strong>Display Name:</strong> Used to personalize the app interface.</li>
+          </ul>
+          <p>
+            This data is encrypted in transit and at rest using industry-standard Firebase infrastructure. We do not access your Google contacts, Google Drive, or external account services.
+          </p>
+
+          <h3>B. Assisted Service Queries (₹299 Advisory)</h3>
+          <p>
+            When users request our optional ₹299 assisted advisory service, contact details are submitted securely:
+          </p>
+          <ul>
+            <li><strong>Name and Phone Number:</strong> Submitted through the assisted service form for support communication.</li>
+            <li><strong>Query Message &amp; Category:</strong> Description of the procedural issue (e.g., claim rejection reason, joint declaration inquiry).</li>
+            <li><strong>Sole Purpose:</strong> Contact details are used <strong>solely for query resolution</strong> and support follow-up.</li>
+            <li><strong>No Advertising Sharing:</strong> Data is <strong>never sold, rented, or shared with third-party advertisers or marketing data brokers</strong>.</li>
+          </ul>
+
+          <h3>C. Calculations &amp; Estimations</h3>
+          <p>
+            All EPS-95 pension calculations and EPF compound interest projections run locally on-device. Input parameters (wages, years of service) are processed in volatile memory and are not uploaded to our servers.
           </p>
         </section>
 
         <section class="legal-section">
-          <h2>6. Contact Regarding Privacy</h2>
+          <h2>4. Security Standards</h2>
+          <p>
+            We implement industry-standard security measures, including <strong>HTTPS/TLS encryption</strong> for all network transmissions and Firebase Cloud security protocols. Local database records (if any) are restricted by Android's sandbox permissions.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2>5. Third-Party Service Providers</h2>
+          <ul>
+            <li><strong>Google / Firebase:</strong> Authentication infrastructure and runtime hosting.</li>
+            <li><strong>Razorpay Software Private Limited:</strong> Secure payment gateway processing for the ₹299 consultation fee. Payments occur on PCI-DSS certified infrastructure; we never store full card numbers or banking passwords.</li>
+            <li><strong>WhatsApp (Meta):</strong> Optional user-initiated support communication protected by WhatsApp's end-to-end encryption.</li>
+          </ul>
+        </section>
+
+        <section class="legal-section">
+          <h2>6. User Rights &amp; Data Deletion Process</h2>
+          <p>
+            Every user has the right to access, rectify, or request permanent deletion of their inquiry records. To delete your contact details or support ticket history:
+          </p>
+          <ul>
+            <li>Visit our dedicated <a href="../data-deletion/">Account and Data Deletion Page</a>.</li>
+            <li>Email your request directly to <a href="mailto:BhimaBhapkar777@gmail.com">BhimaBhapkar777@gmail.com</a> with the subject line <code>Data Deletion Request - PF Pension Assistant</code>.</li>
+            <li>Message WhatsApp support at <strong>+91 9921200935</strong>.</li>
+          </ul>
+          <p>
+            Verified requests are processed and permanently purged from support records within 48 business hours.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2>7. Contact Us Regarding Privacy</h2>
           <div class="card">
-            <p style="margin-bottom: 0.5rem;"><strong>Brand:</strong> AlgoAuraX</p>
-            <p style="margin-bottom: 0.5rem;"><strong>Email:</strong> <a href="mailto:sachinvr141@gmail.com">sachinvr141@gmail.com</a></p>
+            <p style="margin-bottom: 0.5rem;"><strong>Brand / Publisher:</strong> AlgoAuraX</p>
+            <p style="margin-bottom: 0.5rem;"><strong>Privacy Desk Email:</strong> <a href="mailto:BhimaBhapkar777@gmail.com">BhimaBhapkar777@gmail.com</a></p>
             <p style="margin-bottom: 0;"><strong>WhatsApp Support:</strong> <a href="https://wa.me/919921200935" target="_blank" rel="noopener noreferrer">+91 9921200935</a></p>
           </div>
         </section>
@@ -295,73 +364,90 @@ privacy_body = """
 """
 
 # -------------------------------------------------------------
-# 3. TERMS AND CONDITIONS
+# 3. TERMS OF SERVICE
 # -------------------------------------------------------------
-terms_body = """
+terms_body = f"""
     <div class="container content-wrap">
       <div class="page-header">
-        <div class="badge badge-primary">Legal Agreement & KYC Compliant</div>
-        <h1 class="page-title">Terms & Conditions</h1>
-        <p class="page-subtitle">Effective Date: October 24, 2026 &bull; Published by AlgoAuraX for PF Pension Assistant</p>
+        <div class="badge badge-primary">Legal Terms &amp; Conditions</div>
+        <h1 class="page-title">Terms of Service</h1>
+        <p class="page-subtitle">Effective Date: October 26, 2026 &bull; Published by AlgoAuraX for PF Pension Assistant</p>
       </div>
 
       <div class="legal-content">
         <section class="legal-section">
           <h2>1. Agreement to Terms</h2>
           <p>
-            These Terms and Conditions constitute a legally binding agreement between you and <strong>AlgoAuraX</strong> ("we", "us", or "our"), governing your use of the <strong>PF Pension Assistant</strong> Android application and this legal website.
+            These Terms of Service constitute a legally binding agreement between you ("User", "you") and <strong>AlgoAuraX</strong> ("we", "us", or "our"), regarding your use of the <strong>PF Pension Assistant</strong> Android application and this legal portal.
           </p>
         </section>
 
         <section class="legal-section">
-          <h2>2. Independent Status & Non-Affiliation Notice</h2>
+          <h2>2. Non-Government &amp; Private Status Notice</h2>
           <div class="highlight-box warning">
-            <strong>CRITICAL STATUTORY NOTICE:</strong><br>
-            PF Pension Assistant and AlgoAuraX are independent private entities and are <strong>NOT</strong> affiliated with, authorized, endorsed, or sponsored by the Employees' Provident Fund Organisation (EPFO), Ministry of Labour and Employment, or the Government of India. Official government filings and passbook downloads must always be performed through the official portal (<a href="https://www.epfindia.gov.in" target="_blank" rel="noopener noreferrer">epfindia.gov.in</a>) or the UMANG application.
+            <strong>STRICT STATUTORY DISCLOSURE:</strong><br>
+            PF Pension Assistant and AlgoAuraX are strictly <strong>independent, private, non-government entities</strong>. We are NOT affiliated with, endorsed by, authorized by, or sponsored by the Employees' Provident Fund Organisation (EPFO), Ministry of Labour and Employment, or the Government of India. The application is an educational and informational resource designed to assist users in understanding published rules and procedures.
           </div>
         </section>
 
         <section class="legal-section">
-          <h2>3. Nature of Service: PF Expert Assistance (₹299)</h2>
+          <h2>3. Informational &amp; Estimation Purpose Only</h2>
           <p>
-            The Application provides a voluntary, private 1-on-1 consultation service for an assisted advisory fee of <strong>₹299 per request</strong>:
+            All calculations generated by the app — including EPS-95 monthly pension projections, 2-year bonus weightage calculations, and EPF interest growth estimations — are <strong>indicative mathematical estimates based on published rules</strong>.
           </p>
           <ul>
-            <li><strong>Consultancy & Guidance Only:</strong> The ₹299 fee is strictly a private consultancy and procedural advisory fee for review of paperwork, rejection analysis, and form guidance.</li>
-            <li><strong>No Outcome Guarantee:</strong> The fee does <strong>NOT</strong> guarantee claim approval, pension approval, claim settlement, or expedited processing by EPFO authorities. Decisions rest solely with jurisdictional Regional PF Commissioners.</li>
-            <li><strong>Official Submission by User:</strong> The user must independently submit all claims and grievances via official government portals.</li>
+            <li>Calculations do NOT constitute official statements of balance, legal entitlement, or guaranteed pension sanctions.</li>
+            <li>Statutory interest rates, pension rules, and administrative thresholds are subject to amendment by the Central Board of Trustees, EPFO, and Government gazette notifications.</li>
           </ul>
         </section>
 
         <section class="legal-section">
-          <h2>4. User Responsibilities & Prohibitions</h2>
+          <h2>4. The ₹299 Assisted Advisory Service</h2>
+          <p>
+            The Application offers an optional 1-on-1 private assistance service for an advisory fee of <strong>₹299 per request</strong>:
+          </p>
           <ul>
-            <li>Users must provide truthful and accurate information during advisory intake.</li>
-            <li>Users must <strong>never</strong> share UAN passwords, OTPs, or banking PINs with our support desk.</li>
-            <li>Users agree not to use the app for fraudulent, unlawful, or unauthorized activities.</li>
+            <li><strong>Nature of Service:</strong> The ₹299 fee is strictly an optional private consulting fee for 1-on-1 assistance, form review, document guidance, and procedural explanation.</li>
+            <li><strong>Not an EPFO Government Fee:</strong> <span style="color: var(--color-error); font-weight: 700;">This fee is NOT an official EPFO government fee and does NOT guarantee claim approval or pension sanction by EPFO authorities.</span></li>
+            <li><strong>No Authority to Adjudicate:</strong> AlgoAuraX specialists have no internal administrative access to EPFO portals or claim approval queues. Final decisions rest solely with your jurisdictional Regional PF Commissioner.</li>
+            <li><strong>User Submission:</strong> Official claims (Form 19, 10C, 31, 10D) and grievances must be independently submitted by the user on official government portals.</li>
           </ul>
         </section>
 
         <section class="legal-section">
-          <h2>5. Payment Terms & Third-Party Gateways</h2>
+          <h2>5. User Responsibilities &amp; Official Verification</h2>
           <p>
-            Payments are collected securely via authorized payment gateways (e.g. Razorpay). The fee of ₹299 is transparently presented prior to transaction initiation.
+            Users are strictly responsible for verifying official balances, contribution records, and claim status directly on official government portals:
+          </p>
+          <ul>
+            <li><strong>Official Portals for Verification:</strong> Always verify official balances directly on <a href="https://www.epfindia.gov.in" target="_blank" rel="noopener noreferrer">epfindia.gov.in</a> or the official Member Passbook portal (<a href="https://passbook.epfindia.gov.in" target="_blank" rel="noopener noreferrer">passbook.epfindia.gov.in</a>).</li>
+            <li><strong>Accuracy of Information:</strong> Users agree to supply truthful details when inquiring for assisted advisory.</li>
+            <li><strong>Prohibition on Sensitive Data:</strong> Users must never input or message UAN passwords, Aadhaar OTPs, or banking PINs to our team.</li>
+          </ul>
+        </section>
+
+{gov_sources_component}
+
+        <section class="legal-section">
+          <h2>6. Intellectual Property &amp; Prohibitions</h2>
+          <p>
+            All software code, graphics, layout, text, and original assets of PF Pension Assistant are the intellectual property of AlgoAuraX. Users shall not decompile, reverse-engineer, distribute, or exploit the application for unauthorized commercial gains.
           </p>
         </section>
 
         <section class="legal-section">
-          <h2>6. Limitation of Liability & Governing Law</h2>
+          <h2>7. Limitation of Liability &amp; Governing Law</h2>
           <p>
-            To the maximum extent permitted by applicable Indian laws, AlgoAuraX shall not be liable for any indirect, incidental, or consequential damages resulting from portal downtimes, employer non-compliance, or EPFO decisions. These Terms are governed by the laws of India.
+            AlgoAuraX shall not be liable for any indirect, incidental, or consequential damages resulting from user reliance on informational estimates, portal downtimes, employer non-compliance, or EPFO claim rejection. These Terms are governed by and construed in accordance with the laws of <strong>India</strong>.
           </p>
         </section>
 
         <section class="legal-section">
-          <h2>7. Contact Information</h2>
+          <h2>8. Support &amp; Grievances</h2>
           <div class="card">
-            <p style="margin-bottom: 0.5rem;"><strong>Brand:</strong> AlgoAuraX</p>
-            <p style="margin-bottom: 0.5rem;"><strong>Support Email:</strong> <a href="mailto:sachinvr141@gmail.com">sachinvr141@gmail.com</a></p>
-            <p style="margin-bottom: 0;"><strong>WhatsApp / Phone:</strong> +91 9921200935 (9:00 AM – 7:00 PM IST, Mon–Sat)</p>
+            <p style="margin-bottom: 0.5rem;"><strong>Entity:</strong> AlgoAuraX &bull; PF Pension Assistant</p>
+            <p style="margin-bottom: 0.5rem;"><strong>Support Email:</strong> <a href="mailto:BhimaBhapkar777@gmail.com">BhimaBhapkar777@gmail.com</a></p>
+            <p style="margin-bottom: 0;"><strong>WhatsApp Support:</strong> <a href="https://wa.me/919921200935" target="_blank" rel="noopener noreferrer">+91 9921200935</a> (9:00 AM – 7:00 PM IST, Mon–Sat)</p>
           </div>
         </section>
       </div>
@@ -374,35 +460,35 @@ terms_body = """
 refund_body = """
     <div class="container content-wrap">
       <div class="page-header">
-        <div class="badge badge-primary">Razorpay Merchant KYC Compliant</div>
-        <h1 class="page-title">Refund & Cancellation Policy</h1>
-        <p class="page-subtitle">Effective Date: October 24, 2026 &bull; Published by AlgoAuraX for PF Pension Assistant</p>
+        <div class="badge badge-primary">Consumer Transparency</div>
+        <h1 class="page-title">Refund &amp; Cancellation Policy</h1>
+        <p class="page-subtitle">Effective Date: October 26, 2026 &bull; Published by AlgoAuraX for PF Pension Assistant</p>
         <div class="meta-info">
           <span>Fee: ₹299 per Assistance Request</span>
-          <span>Desk: sachinvr141@gmail.com</span>
+          <span>Support Desk: BhimaBhapkar777@gmail.com</span>
         </div>
       </div>
 
       <div class="legal-content">
         <section class="legal-section">
-          <h2>1. Overview & Commitment</h2>
+          <h2>1. Overview &amp; Policy Objective</h2>
           <p>
-            AlgoAuraX strives to maintain complete consumer transparency for the ₹299 PF Expert Assistance service. We operate under clear, fair, and prompt refund terms.
+            AlgoAuraX maintains clear, fair, and prompt refund terms for the ₹299 PF Expert Assistance consultation. Every refund or cancellation request is handled fairly under the conditions specified below.
           </p>
         </section>
 
         <section class="legal-section">
-          <h2>2. 100% Refund Guarantee</h2>
-          <p>A full 100% refund of the ₹299 advisory fee will be granted under the following circumstances:</p>
+          <h2>2. Refund Eligibility for the ₹299 Advisory Service</h2>
+          <p>A full 100% refund of the ₹299 fee is granted in the following circumstances:</p>
           <ul>
             <li>
-              <strong>48-Hour Response Guarantee:</strong> Full refund if our assistance specialist fails to respond or initiate guidance within <strong>48 business hours</strong> of verified payment receipt.
+              <strong>Unfulfilled Requests Prior to Consultation Review:</strong> Eligible if the user requests cancellation or the service request cannot be fulfilled prior to consultation review by our assistance specialist.
             </li>
             <li>
-              <strong>Duplicate or Erroneous Charges:</strong> If a user was charged multiple times for the same request due to a network glitch or payment gateway timeout.
+              <strong>48-Hour Response Commitment:</strong> Full refund if our assistance specialist fails to initiate guidance within <strong>48 business hours</strong> of verified payment receipt.
             </li>
             <li>
-              <strong>Cancellation Before Advisory:</strong> If the user requests cancellation prior to the specialist reviewing documentation or drafting guidance.
+              <strong>Duplicate or Erroneous Transactions:</strong> Full refund if a user was debited multiple times for the same single inquiry due to network or payment gateway issues.
             </li>
           </ul>
         </section>
@@ -410,22 +496,26 @@ refund_body = """
         <section class="legal-section">
           <h2>3. Non-Refundable Situations</h2>
           <ul>
-            <li><strong>Advisory Already Delivered:</strong> Once procedural analysis, document review, or joint declaration guidance has been delivered via WhatsApp/email, the consultation fee is non-refundable.</li>
-            <li><strong>Government Claim Outcome:</strong> As the fee covers advisory assistance only, rejection of claims by EPFO authorities due to employer non-contribution, service gaps, or statutory ineligibility does not qualify for a refund.</li>
+            <li>
+              <strong>Consultation Already Delivered:</strong> Once procedural analysis, document review, or joint declaration guidance has been drafted and delivered via WhatsApp or email, the advisory service is deemed completed and non-refundable.
+            </li>
+            <li>
+              <strong>Official Government Decisions:</strong> The ₹299 fee pays strictly for advisory time. Official claim rejection or pension delay by EPFO authorities due to employer non-contribution, service discrepancies, or statutory ineligibility does not qualify for a refund.
+            </li>
           </ul>
         </section>
 
         <section class="legal-section">
-          <h2>4. Refund Request Process</h2>
+          <h2>4. How to Submit a Refund Request</h2>
           <p>Users can submit a refund claim within 7 calendar days of transaction:</p>
           <ol>
-            <li>Email <a href="mailto:sachinvr141@gmail.com">sachinvr141@gmail.com</a> or message WhatsApp at <strong>+91 9921200935</strong>.</li>
-            <li>Provide your Full Name, 10-digit mobile number, Request ID (e.g. <code>PF-REQ-XXXXX</code>), and Razorpay payment reference ID.</li>
+            <li>Send an email to <a href="mailto:BhimaBhapkar777@gmail.com">BhimaBhapkar777@gmail.com</a> with the subject <code>Refund Request - [Your Request ID]</code>, or message WhatsApp at <a href="https://wa.me/919921200935" target="_blank" rel="noopener noreferrer"><strong>+91 9921200935</strong></a>.</li>
+            <li>Include your Full Name, 10-digit mobile number, Request ID (e.g. <code>PF-REQ-XXXXX</code>), and Razorpay transaction reference ID.</li>
           </ol>
         </section>
 
         <section class="legal-section">
-          <h2>5. Refund Settlement Timeline</h2>
+          <h2>5. Settlement &amp; Credit Timeline</h2>
           <p>
             Approved refunds are credited back to the original payment source (bank account, UPI, or card) through Razorpay within <strong>5 to 7 business days</strong>, subject to bank processing cycles.
           </p>
@@ -437,12 +527,12 @@ refund_body = """
 # -------------------------------------------------------------
 # 5. DISCLAIMER
 # -------------------------------------------------------------
-disclaimer_body = """
+disclaimer_body = f"""
     <div class="container content-wrap">
       <div class="page-header">
         <div class="badge badge-primary">Statutory Transparency Notice</div>
-        <h1 class="page-title">Non-Affiliation Disclaimer</h1>
-        <p class="page-subtitle">Effective Date: October 24, 2026 &bull; Published by AlgoAuraX for PF Pension Assistant</p>
+        <h1 class="page-title">Disclaimer</h1>
+        <p class="page-subtitle">Effective Date: October 26, 2026 &bull; Published by AlgoAuraX for PF Pension Assistant</p>
       </div>
 
       <div class="disclaimer-banner" style="border-left: 4px solid var(--color-warning);">
@@ -450,37 +540,37 @@ disclaimer_body = """
           <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
         </svg>
         <div>
-          <strong>IMPORTANT NOTICE ON INDEPENDENT STATUS:</strong><br>
-          PF Pension Assistant is an independent educational and procedural assistance application developed by AlgoAuraX. It is <strong>NOT</strong> an official application of the Employees' Provident Fund Organisation (EPFO), the Ministry of Labour and Employment, or the Government of India.
+          <strong>MANDATORY STATUTORY NOTICE:</strong><br>
+          PF Pension Assistant and this website are independent educational &amp; informational resources. This service <strong>DOES NOT represent, and is NOT affiliated with, endorsed by, or authorized by</strong> the Employees' Provident Fund Organisation (EPFO), Ministry of Labour and Employment, or the Government of India.
         </div>
       </div>
 
       <div class="legal-content">
         <section class="legal-section">
-          <h2>1. Private Entity Statement</h2>
+          <h2>1. Independent Advisory &amp; Educational Status</h2>
           <p>
-            Neither PF Pension Assistant nor AlgoAuraX is affiliated with, authorized, endorsed, or sponsored by EPFO or any government agency. The application serves strictly as an educational and procedural calculator utility.
+            Neither PF Pension Assistant nor its publisher, AlgoAuraX, is a government agency or an authorized representative of EPFO. All content, tools, and assisted advisory services are provided strictly for educational and procedural clarification.
           </p>
         </section>
 
+{gov_sources_component}
+
         <section class="legal-section">
-          <h2>2. No Outcome Guarantee</h2>
+          <h2>2. Mathematical &amp; Calculation Disclaimer</h2>
           <p>
-            The calculations and ₹299 assisted advisory do not guarantee claim settlement, pension disbursement, or official claim outcomes. Final adjudication rests solely with the competent Regional PF Commissioners.
+            Pension and interest calculation formulas in this application are derived from publicly published EPFO rules (such as the Employees' Pension Scheme, 1995, and EPF Act, 1952) and <strong>act as estimates only</strong>.
           </p>
+          <ul>
+            <li>Estimations do not guarantee actual settlement amounts or pension payment orders (PPO).</li>
+            <li>Actual benefits are subject to statutory verification of non-contributory periods, service gaps, wage ceilings, and official approval by competent Regional PF Commissioners.</li>
+          </ul>
         </section>
 
         <section class="legal-section">
-          <h2>3. Direct Verified Official Government Portals</h2>
-          <p>For official government services, passbook downloads, and statutory claims, please visit:</p>
-          <div class="card">
-            <ul>
-              <li><strong>Official EPFO Portal:</strong> <a href="https://www.epfindia.gov.in" target="_blank" rel="noopener noreferrer">https://www.epfindia.gov.in</a></li>
-              <li><strong>EPFO Member Interface (UAN Login):</strong> <a href="https://unifiedportal-mem.epfindia.gov.in" target="_blank" rel="noopener noreferrer">https://unifiedportal-mem.epfindia.gov.in</a></li>
-              <li><strong>EPFO Member Passbook & Claim Status:</strong> <a href="https://passbook.epfindia.gov.in" target="_blank" rel="noopener noreferrer">https://passbook.epfindia.gov.in</a></li>
-              <li><strong>EPFiGMS Official Grievance Portal:</strong> <a href="https://epfigms.gov.in" target="_blank" rel="noopener noreferrer">https://epfigms.gov.in</a></li>
-            </ul>
-          </div>
+          <h2>3. No Representation in Government Proceedings</h2>
+          <p>
+            The optional ₹299 assisted advisory provides informational guidance and document explanation only. It does not constitute legal advocacy or official representation before any statutory tribunal or EPFO authority.
+          </p>
         </section>
       </div>
     </div>
@@ -496,34 +586,34 @@ deletion_body = """
         <h1 class="page-title">Account and Data Deletion</h1>
         <p class="page-subtitle">Instructions for requesting deletion of user data under AlgoAuraX.</p>
         <div class="meta-info">
-          <span>Support Desk: sachinvr141@gmail.com</span>
+          <span>Support Desk: BhimaBhapkar777@gmail.com</span>
           <span>WhatsApp: +91 9921200935</span>
         </div>
       </div>
 
       <div class="legal-content">
         <section class="legal-section">
-          <h2>1. Zero-Login Architecture</h2>
+          <h2>1. Data Minimization &amp; Zero Credential Storage</h2>
           <p>
-            The PF Pension Assistant mobile app operates with a zero-login architecture. No accounts, UAN credentials, or passwords are created or stored on external servers.
+            PF Pension Assistant does not collect or store sensitive EPFO credentials, UAN passwords, or Aadhaar OTPs. Basic login information from Firebase Google Sign-In is limited to email and display name.
           </p>
         </section>
 
         <section class="legal-section">
           <h2>2. Clearing On-Device Data</h2>
           <p>
-            Users can instantly clear any local on-device calculation history by opening Android settings: <code>Settings &gt; Apps &gt; PF Pension Assistant &gt; Storage &gt; Clear Data</code>.
+            Users can instantly clear all locally stored preferences by clearing app storage: <code>Android Settings &gt; Apps &gt; PF Pension Assistant &gt; Storage &gt; Clear Data</code>.
           </p>
         </section>
 
         <section class="legal-section">
-          <h2>3. Deleting Advisory & Support Inquiries</h2>
+          <h2>3. Deleting Assisted Service Inquiries</h2>
           <p>
-            To purge your WhatsApp support history, name, or payment transaction reference:
+            To request permanent deletion of your name, phone number, WhatsApp inquiry log, or transaction reference:
           </p>
           <div class="card">
-            <p>Email: <a href="mailto:sachinvr141@gmail.com?subject=Data%20Deletion%20Request%20-%20PF%20Pension%20Assistant" class="btn btn-primary" style="margin-right: 0.5rem;">Email Deletion Request</a> or message WhatsApp at <strong>+91 9921200935</strong>.</p>
-            <p class="form-help">Quote your Name, Mobile Number, and Request ID (if applicable). Requests are verified and purged within 48 business hours.</p>
+            <p>Email: <a href="mailto:BhimaBhapkar777@gmail.com?subject=Data%20Deletion%20Request%20-%20PF%20Pension%20Assistant" class="btn btn-primary" style="margin-right: 0.5rem;">Email Deletion Request</a> or message WhatsApp at <a href="https://wa.me/919921200935" target="_blank" rel="noopener noreferrer"><strong>+91 9921200935</strong></a>.</p>
+            <p class="form-help">Please quote your Name, Phone Number, and Request ID (if applicable). Requests are verified and permanently purged within 48 business hours.</p>
           </div>
         </section>
       </div>
@@ -536,9 +626,9 @@ deletion_body = """
 contact_body = """
     <div class="container content-wrap">
       <div class="page-header">
-        <div class="badge badge-primary">Razorpay Merchant & User Support Desk</div>
+        <div class="badge badge-primary">Support &amp; Inquiries</div>
         <h1 class="page-title">Contact Us</h1>
-        <p class="page-subtitle">Reach out to AlgoAuraX customer support for assistance, billing inquiries, or technical feedback.</p>
+        <p class="page-subtitle">Reach out to the AlgoAuraX support desk for assistance, billing queries, or feedback.</p>
       </div>
 
       <div class="legal-content">
@@ -551,7 +641,7 @@ contact_body = """
               </span>
               <div>
                 <h3 style="margin: 0; font-size: 1.15rem;">WhatsApp Support Desk</h3>
-                <span style="font-size: 0.8rem; color: var(--color-text-secondary);">Direct messaging & ₹299 advisory</span>
+                <span style="font-size: 0.8rem; color: var(--color-text-secondary);">Direct messaging &amp; ₹299 advisory</span>
               </div>
             </div>
             <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 1.25rem;">
@@ -573,29 +663,29 @@ contact_body = """
               </span>
               <div>
                 <h3 style="margin: 0; font-size: 1.15rem;">Official Email Desk</h3>
-                <span style="font-size: 0.8rem; color: var(--color-text-secondary);">Support, billing & merchant inquiries</span>
+                <span style="font-size: 0.8rem; color: var(--color-text-secondary);">Support, billing &amp; compliance inquiries</span>
               </div>
             </div>
             <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 1.25rem;">
-              Send official queries regarding refunds, advisory requests, or merchant verification.
+              Send official queries regarding refunds, advisory requests, or policy questions.
             </p>
             <div style="margin-bottom: 1.25rem; font-family: var(--font-mono); font-weight: 700; font-size: 1.05rem; color: var(--color-text-main); word-break: break-all;">
-              sachinvr141@gmail.com
+              BhimaBhapkar777@gmail.com
             </div>
-            <a href="mailto:sachinvr141@gmail.com?subject=Support%20Inquiry%20-%20PF%20Pension%20Assistant" class="btn btn-primary" style="width: 100%;">
+            <a href="mailto:BhimaBhapkar777@gmail.com?subject=Support%20Inquiry%20-%20PF%20Pension%20Assistant" class="btn btn-primary" style="width: 100%;">
               Send an Email
             </a>
           </div>
         </div>
 
         <section class="legal-section">
-          <h2>Merchant & Entity Details (Razorpay KYC Compliant)</h2>
+          <h2>Merchant &amp; Entity Details</h2>
           <div class="card">
             <p style="margin-bottom: 0.65rem;"><strong>Application Name:</strong> PF Pension Assistant</p>
             <p style="margin-bottom: 0.65rem;"><strong>Developer / Brand:</strong> AlgoAuraX</p>
             <p style="margin-bottom: 0.65rem;"><strong>Operating Country:</strong> India</p>
             <p style="margin-bottom: 0.65rem;"><strong>Support Operating Hours:</strong> 9:00 AM – 7:00 PM IST (Monday to Saturday)</p>
-            <p style="margin-bottom: 0.65rem;"><strong>Official Support Email:</strong> <a href="mailto:sachinvr141@gmail.com">sachinvr141@gmail.com</a></p>
+            <p style="margin-bottom: 0.65rem;"><strong>Support Email:</strong> <a href="mailto:BhimaBhapkar777@gmail.com">BhimaBhapkar777@gmail.com</a></p>
             <p style="margin-bottom: 0.65rem;"><strong>Support Phone / WhatsApp:</strong> +91 9921200935</p>
             <p style="margin-bottom: 0;"><strong>Official Package ID:</strong> <code>com.algoaurax.pfpensionassistant</code></p>
           </div>
@@ -625,4 +715,4 @@ for p in PAGES:
         f.write(html)
     print(f"Generated: {p['out_file']}")
 
-print("All 7 static site pages rendered with complete updates!")
+print("All 7 pages updated with 100% Google Play policy compliance!")
