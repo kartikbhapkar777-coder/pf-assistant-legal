@@ -308,32 +308,39 @@ code, kbd {
   list-style: none;
   padding: 0;
   margin: 0;
-  background: var(--color-surface-subtle);
-  padding: 4px;
-  border-radius: var(--radius-full);
-  border: 1px solid var(--color-border);
 }
 
 .nav-links a {
   color: var(--color-text-secondary);
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  padding: 0.45rem 0.95rem;
-  border-radius: var(--radius-full);
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  display: inline-block;
+  padding: 0.5rem 0.85rem;
+  border-radius: var(--radius-sm);
+  transition: all 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  line-height: 1.2;
   text-decoration: none !important;
 }
 
 .nav-links a:hover {
-  color: var(--color-text-main);
+  color: var(--color-primary);
   background: var(--color-surface-hover);
 }
 
 .nav-links a.active {
+  color: var(--color-primary) !important;
+  background: var(--color-primary-container);
+  font-weight: 700;
+  border: 1px solid rgba(var(--color-primary-rgb), 0.2);
+}
+
+[data-theme="dark"] .nav-links a.active {
   color: #FFFFFF !important;
   background: var(--color-primary);
-  box-shadow: 0 2px 8px rgba(var(--color-primary-rgb), 0.35);
+  border-color: transparent;
 }
 
 .header-actions {
