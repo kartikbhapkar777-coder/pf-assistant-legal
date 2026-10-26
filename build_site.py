@@ -237,7 +237,7 @@ home_body = f"""
           </a>
           <a href="./contact/" class="card" style="text-decoration: none; color: inherit;">
             <h4 style="margin-bottom: 0.35rem; color: var(--color-primary);">Contact Us &rarr;</h4>
-            <p style="font-size: 0.85rem; color: var(--color-text-secondary); margin: 0;">Email: BhimaBhapkar777@gmail.com, WhatsApp: +91 9921200935 (9 AM - 7 PM Mon-Sat).</p>
+            <p style="font-size: 0.85rem; color: var(--color-text-secondary); margin: 0;">Email: sachinvr141@gmail.com, WhatsApp: +91 9921200935 (9 AM - 7 PM Mon-Sat).</p>
           </a>
         </div>
       </section>
@@ -255,7 +255,7 @@ privacy_body = """
         <p class="page-subtitle">Effective Date: October 26, 2026 &bull; Published by AlgoAuraX for PF Pension Assistant (Android)</p>
         <div class="meta-info">
           <span>Target Audience: 18+ (Working professionals &amp; pensioners)</span>
-          <span>Contact Email: BhimaBhapkar777@gmail.com</span>
+          <span>Contact Email: sachinvr141@gmail.com</span>
         </div>
       </div>
 
@@ -343,7 +343,7 @@ privacy_body = """
           </p>
           <ul>
             <li>Visit our dedicated <a href="../data-deletion/">Account and Data Deletion Page</a>.</li>
-            <li>Email your request directly to <a href="mailto:BhimaBhapkar777@gmail.com">BhimaBhapkar777@gmail.com</a> with the subject line <code>Data Deletion Request - PF Pension Assistant</code>.</li>
+            <li>Email your request directly to <a href="mailto:sachinvr141@gmail.com">sachinvr141@gmail.com</a> with the subject line <code>Data Deletion Request - PF Pension Assistant</code>.</li>
             <li>Message WhatsApp support at <strong>+91 9921200935</strong>.</li>
           </ul>
           <p>
@@ -355,7 +355,7 @@ privacy_body = """
           <h2>7. Contact Us Regarding Privacy</h2>
           <div class="card">
             <p style="margin-bottom: 0.5rem;"><strong>Brand / Publisher:</strong> AlgoAuraX</p>
-            <p style="margin-bottom: 0.5rem;"><strong>Privacy Desk Email:</strong> <a href="mailto:BhimaBhapkar777@gmail.com">BhimaBhapkar777@gmail.com</a></p>
+            <p style="margin-bottom: 0.5rem;"><strong>Privacy Desk Email:</strong> <a href="mailto:sachinvr141@gmail.com">sachinvr141@gmail.com</a></p>
             <p style="margin-bottom: 0;"><strong>WhatsApp Support:</strong> <a href="https://wa.me/919921200935" target="_blank" rel="noopener noreferrer">+91 9921200935</a></p>
           </div>
         </section>
@@ -446,7 +446,7 @@ terms_body = f"""
           <h2>8. Support &amp; Grievances</h2>
           <div class="card">
             <p style="margin-bottom: 0.5rem;"><strong>Entity:</strong> AlgoAuraX &bull; PF Pension Assistant</p>
-            <p style="margin-bottom: 0.5rem;"><strong>Support Email:</strong> <a href="mailto:BhimaBhapkar777@gmail.com">BhimaBhapkar777@gmail.com</a></p>
+            <p style="margin-bottom: 0.5rem;"><strong>Support Email:</strong> <a href="mailto:sachinvr141@gmail.com">sachinvr141@gmail.com</a></p>
             <p style="margin-bottom: 0;"><strong>WhatsApp Support:</strong> <a href="https://wa.me/919921200935" target="_blank" rel="noopener noreferrer">+91 9921200935</a> (9:00 AM – 7:00 PM IST, Mon–Sat)</p>
           </div>
         </section>
@@ -465,7 +465,7 @@ refund_body = """
         <p class="page-subtitle">Effective Date: October 26, 2026 &bull; Published by AlgoAuraX for PF Pension Assistant</p>
         <div class="meta-info">
           <span>Fee: ₹299 per Assistance Request</span>
-          <span>Support Desk: BhimaBhapkar777@gmail.com</span>
+          <span>Support Desk: sachinvr141@gmail.com</span>
         </div>
       </div>
 
@@ -509,7 +509,7 @@ refund_body = """
           <h2>4. How to Submit a Refund Request</h2>
           <p>Users can submit a refund claim within 7 calendar days of transaction:</p>
           <ol>
-            <li>Send an email to <a href="mailto:BhimaBhapkar777@gmail.com">BhimaBhapkar777@gmail.com</a> with the subject <code>Refund Request - [Your Request ID]</code>, or message WhatsApp at <a href="https://wa.me/919921200935" target="_blank" rel="noopener noreferrer"><strong>+91 9921200935</strong></a>.</li>
+            <li>Send an email to <a href="mailto:sachinvr141@gmail.com">sachinvr141@gmail.com</a> with the subject <code>Refund Request - [Your Request ID]</code>, or message WhatsApp at <a href="https://wa.me/919921200935" target="_blank" rel="noopener noreferrer"><strong>+91 9921200935</strong></a>.</li>
             <li>Include your Full Name, 10-digit mobile number, Request ID (e.g. <code>PF-REQ-XXXXX</code>), and Razorpay transaction reference ID.</li>
           </ol>
         </section>
@@ -586,7 +586,7 @@ deletion_body = """
         <h1 class="page-title">Account and Data Deletion</h1>
         <p class="page-subtitle">Instructions for requesting deletion of user data under AlgoAuraX.</p>
         <div class="meta-info">
-          <span>Support Desk: BhimaBhapkar777@gmail.com</span>
+          <span>Support Desk: sachinvr141@gmail.com</span>
           <span>WhatsApp: +91 9921200935</span>
         </div>
       </div>
@@ -612,7 +612,7 @@ deletion_body = """
             To request permanent deletion of your name, phone number, WhatsApp inquiry log, or transaction reference:
           </p>
           <div class="card">
-            <p>Email: <a href="mailto:BhimaBhapkar777@gmail.com?subject=Data%20Deletion%20Request%20-%20PF%20Pension%20Assistant" class="btn btn-primary" style="margin-right: 0.5rem;">Email Deletion Request</a> or message WhatsApp at <a href="https://wa.me/919921200935" target="_blank" rel="noopener noreferrer"><strong>+91 9921200935</strong></a>.</p>
+            <p>Email: <a href="mailto:sachinvr141@gmail.com?subject=Data%20Deletion%20Request%20-%20PF%20Pension%20Assistant" class="btn btn-primary" style="margin-right: 0.5rem;">Email Deletion Request</a> or message WhatsApp at <a href="https://wa.me/919921200935" target="_blank" rel="noopener noreferrer"><strong>+91 9921200935</strong></a>.</p>
             <p class="form-help">Please quote your Name, Phone Number, and Request ID (if applicable). Requests are verified and permanently purged within 48 business hours.</p>
           </div>
         </section>
@@ -670,9 +670,9 @@ contact_body = """
               Send official queries regarding refunds, advisory requests, or policy questions.
             </p>
             <div style="margin-bottom: 1.25rem; font-family: var(--font-mono); font-weight: 700; font-size: 1.05rem; color: var(--color-text-main); word-break: break-all;">
-              BhimaBhapkar777@gmail.com
+              sachinvr141@gmail.com
             </div>
-            <a href="mailto:BhimaBhapkar777@gmail.com?subject=Support%20Inquiry%20-%20PF%20Pension%20Assistant" class="btn btn-primary" style="width: 100%;">
+            <a href="mailto:sachinvr141@gmail.com?subject=Support%20Inquiry%20-%20PF%20Pension%20Assistant" class="btn btn-primary" style="width: 100%;">
               Send an Email
             </a>
           </div>
@@ -685,7 +685,7 @@ contact_body = """
             <p style="margin-bottom: 0.65rem;"><strong>Developer / Brand:</strong> AlgoAuraX</p>
             <p style="margin-bottom: 0.65rem;"><strong>Operating Country:</strong> India</p>
             <p style="margin-bottom: 0.65rem;"><strong>Support Operating Hours:</strong> 9:00 AM – 7:00 PM IST (Monday to Saturday)</p>
-            <p style="margin-bottom: 0.65rem;"><strong>Support Email:</strong> <a href="mailto:BhimaBhapkar777@gmail.com">BhimaBhapkar777@gmail.com</a></p>
+            <p style="margin-bottom: 0.65rem;"><strong>Support Email:</strong> <a href="mailto:sachinvr141@gmail.com">sachinvr141@gmail.com</a></p>
             <p style="margin-bottom: 0.65rem;"><strong>Support Phone / WhatsApp:</strong> +91 9921200935</p>
             <p style="margin-bottom: 0;"><strong>Official Package ID:</strong> <code>com.algoaurax.pfpensionassistant</code></p>
           </div>

@@ -64,7 +64,7 @@ PAGES = [
     {
         "id": "contact",
         "title": "Contact Us & Support — PF Pension Assistant",
-        "description": "Official support desk for PF Pension Assistant. Email: BhimaBhapkar777@gmail.com, WhatsApp: +91 9921200935 (9 AM - 7 PM IST, Mon-Sat).",
+        "description": "Official support desk for PF Pension Assistant. Email: sachinvr141@gmail.com, WhatsApp: +91 9921200935 (9 AM - 7 PM IST, Mon-Sat).",
         "rel_base": "../",
         "out_file": "contact/index.html",
         "header_title": "Contact Us",
@@ -221,7 +221,7 @@ def render_html_page(page_meta, body_content):
       </div>
 
       <div class="footer-bottom">
-        <div>&copy; 2026 AlgoAuraX &bull; PF Pension Assistant. All rights reserved. Support: <a href="mailto:BhimaBhapkar777@gmail.com">BhimaBhapkar777@gmail.com</a> | WhatsApp: +91 9921200935</div>
+        <div>&copy; 2026 AlgoAuraX &bull; PF Pension Assistant. All rights reserved. Support: <a href="mailto:sachinvr141@gmail.com">sachinvr141@gmail.com</a> | WhatsApp: +91 9921200935</div>
         <div>Strictly compliant with Google Play Developer Policies &amp; Razorpay Merchant KYC Guidelines.</div>
       </div>
     </div>

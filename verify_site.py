@@ -25,7 +25,7 @@ def test_site():
     assert os.path.isfile(os.path.join(base_dir, "js", "main.js")), "Missing main.js"
     print(" [PASS] Static assets (CSS/JS) present.")
 
-    verified_email = "BhimaBhapkar777@gmail.com"
+    verified_email = "sachinvr141@gmail.com"
     phone_digits = "9921200935"
 
     for p in pages:
