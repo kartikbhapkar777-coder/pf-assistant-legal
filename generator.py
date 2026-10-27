@@ -107,7 +107,7 @@ def render_html_page(page_meta, body_content):
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{rel}css/style.css?v=1793026882">
+  <link rel="stylesheet" href="{rel}css/style.css?v=1793094481">
   <link rel="icon" type="image/png" sizes="32x32" href="{rel}images/favicon-32x32.png?v=8">
   <link rel="apple-touch-icon" sizes="192x192" href="{rel}images/icon-192.png?v=8">
 </head>
@@ -126,10 +126,10 @@ def render_html_page(page_meta, body_content):
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="{rel}" class="brand-link" aria-label="PF Pension Assistant Home">
-        <img src="{rel}images/app-logo.png?v=8" alt="PF Pension Assistant Logo" class="brand-logo-img">
-        <div>
-          <span>PF Pension Assistant</span>
+            <a href="{rel}" class="brand-link" aria-label="PF Pension Assistant Home">
+        <img src="{rel}images/app-logo.png?v=1793094481" alt="PF Pension Assistant Logo" class="brand-logo-img">
+        <div class="brand-text-wrap">
+          <span class="brand-title">PF Pension Assistant</span>
           <span class="brand-sub">Independent Resource by AlgoAuraX</span>
         </div>
       </a>

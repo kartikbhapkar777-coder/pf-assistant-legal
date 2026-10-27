@@ -254,13 +254,10 @@ code, kbd {
 
 /* Header */
 .site-header {
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 100;
-  background-color: var(--color-surface-translucent);
+  background-color: var(--color-surface);
   border-bottom: 1px solid var(--color-border);
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -268,7 +265,9 @@ code, kbd {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
+  min-height: 76px;
+  padding: 0.65rem 0;
+  gap: 1.25rem;
 }
 
 .brand-link {
@@ -277,13 +276,27 @@ code, kbd {
   gap: 0.85rem;
   text-decoration: none !important;
   color: var(--color-text-main);
-  font-weight: 700;
-  font-size: 1.05rem;
+  flex-shrink: 0;
+}
+
+.brand-text-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+}
+
+.brand-title {
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: var(--color-text-main);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
 }
 
 .brand-logo-img {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   object-fit: cover;
   border-radius: var(--radius-sm);
   flex-shrink: 0;
@@ -292,13 +305,14 @@ code, kbd {
 }
 
 .brand-sub {
-  font-size: 0.72rem;
+  font-size: 0.74rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   color: var(--color-primary);
   display: block;
-  line-height: 1.2;
+  margin-top: 0.2rem;
+  white-space: nowrap;
 }
 
 .nav-links {
